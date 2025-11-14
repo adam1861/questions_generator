@@ -1,0 +1,2022 @@
+{
+  "course": {
+    "title": "Développement d'applications Java : POO, Hibernate et JavaFX",
+    "modules": [
+      {
+        "title": "Systèmes de gestion de base de données",
+        "mini_modules": [
+          {
+            "title": "Introduction aux bases de données",
+            "concepts": [
+              {
+                "title": "Définition de la base de données",
+                "mini_concepts": [
+                  {
+                    "title": "Ensemble structuré de données qui modélisent un univers réel",
+                    "questions": [
+                      {
+                        "question": "Quel est l'exemple d'un ensemble structuré de données qui modélise un univers réel ?",
+                        "options": [
+                          "Tableau associatif",
+                          "Tableau bidimensionnel",
+                          "Arbre binaire",
+                          "Graphe orienté"
+                        ],
+                        "correct_answer": "Tableau associatif"
+                      },
+                      {
+                        "question": "Quel est l'avantage d'utiliser un ensemble structuré de données pour modéliser un univers réel ?",
+                        "options": [
+                          "Améliorer la vitesse de calcul",
+                          "Réduire la complexité du code",
+                          "Faciliter la compréhension du modèle",
+                          "Améliorer la précision des résultats"
+                        ],
+                        "correct_answer": "Faciliter la compréhension du modèle"
+                      },
+                      {
+                        "question": "Quel est l'exemple d'un ensemble structuré de données qui modélise un univers réel dans le domaine de la géographie ?",
+                        "options": [
+                          "Tableau associatif",
+                          "Arbre binaire",
+                          "Grille de coordonnées",
+                          "Réseau de transport"
+                        ],
+                        "correct_answer": "Grille de coordonnées"
+                      },
+                      {
+                        "question": "Quel est l'avantage d'utiliser un ensemble structuré de données pour modéliser un univers réel dans le domaine de la finance ?",
+                        "options": [
+                          "Améliorer la vitesse de calcul",
+                          "Réduire la complexité du code",
+                          "Faciliter la compréhension du modèle",
+                          "Améliorer la précision des prévisions"
+                        ],
+                        "correct_answer": "Améliorer la précision des prévisions"
+                      },
+                      {
+                        "question": "Quel est l'exemple d'un ensemble structuré de données qui modélise un univers réel dans le domaine de la biologie ?",
+                        "options": [
+                          "Tableau associatif",
+                          "Arbre binaire",
+                          "Réseau de neurones",
+                          "Graphe de relations"
+                        ],
+                        "correct_answer": "Graphe de relations"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Une base de données est faite pour enregistrer des faits, des opérations au sein d'un organisme",
+                    "questions": [
+                      {
+                        "question": "Quel est l'objectif principal d'une base de données dans un organisme ?",
+                        "options": [
+                          "Gérer les ressources humaines",
+                          "Enregistrer des faits et des opérations",
+                          "Gérer les finances de l'organisme",
+                          "Fournir un système de communication"
+                        ],
+                        "correct_answer": "Enregistrer des faits et des opérations"
+                      },
+                      {
+                        "question": "Qu'est-ce que l'on peut enregistrer dans une base de données ?",
+                        "options": [
+                          "Seulement des opérations",
+                          "Seulement des faits",
+                          "Des faits et des opérations",
+                          "Aucune information"
+                        ],
+                        "correct_answer": "Des faits et des opérations"
+                      },
+                      {
+                        "question": "Pourquoi une base de données est-elle utile dans un organisme ?",
+                        "options": [
+                          "Pour gérer les ressources humaines",
+                          "Pour enregistrer des faits et des opérations",
+                          "Pour fournir un système de communication",
+                          "Pour gérer les finances de l'organisme"
+                        ],
+                        "correct_answer": "Pour enregistrer des faits et des opérations"
+                      },
+                      {
+                        "question": "Qu'est-ce que l'on peut faire avec les informations enregistrées dans une base de données ?",
+                        "options": [
+                          "Seulement les consulter",
+                          "Les modifier",
+                          "Les supprimer",
+                          "Les analyser et les utiliser pour prendre des décisions"
+                        ],
+                        "correct_answer": "Les analyser et les utiliser pour prendre des décisions"
+                      },
+                      {
+                        "question": "Quel est l'avantage principal d'utiliser une base de données dans un organisme ?",
+                        "options": [
+                          "Gagner du temps",
+                          "Réduire les coûts",
+                          "Améliorer la prise de décision",
+                          "Fournir un système de communication"
+                        ],
+                        "correct_answer": "Améliorer la prise de décision"
+                      }
+                    ]
+                  }
+                ],
+                "questions": [
+                  {
+                    "question": "Qu'est-ce qu'une base de données ?",
+                    "options": [
+                      "Un ensemble de fichiers contenant des données structurées",
+                      "Un logiciel permettant de stocker et de gérer des données",
+                      "Un système de gestion de bases de données permettant de stocker et de gérer des données",
+                      "Un outil de sécurité pour protéger les données"
+                    ],
+                    "correct_answer": "c"
+                  },
+                  {
+                    "question": "Quel est l'objectif principal d'une base de données ?",
+                    "options": [
+                      "Stockage de fichiers",
+                      "Gestion de documents",
+                      "Stockage et gestion de données structurées",
+                      "Création de rapports"
+                    ],
+                    "correct_answer": "c"
+                  },
+                  {
+                    "question": "Qu'est-ce qu'une base de données relationnelle ?",
+                    "options": [
+                      "Une base de données qui utilise des tables et des relations pour stocker les données",
+                      "Une base de données qui utilise des fichiers et des dossiers pour stocker les données",
+                      "Une base de données qui utilise des objets et des attributs pour stocker les données",
+                      "Une base de données qui utilise des tables et des colonnes pour stocker les données"
+                    ],
+                    "correct_answer": "a"
+                  },
+                  {
+                    "question": "Qu'est-ce qu'une base de données NoSQL ?",
+                    "options": [
+                      "Une base de données qui utilise des tables et des relations pour stocker les données",
+                      "Une base de données qui utilise des fichiers et des dossiers pour stocker les données",
+                      "Une base de données qui utilise des objets et des attributs pour stocker les données",
+                      "Une base de données qui ne utilise pas de tables et de relations pour stocker les données"
+                    ],
+                    "correct_answer": "d"
+                  },
+                  {
+                    "question": "Quel est l'avantage principal d'une base de données ?",
+                    "options": [
+                      "Stockage de fichiers",
+                      "Gestion de documents",
+                      "Stockage et gestion de données structurées",
+                      "Facilité de recherche et de récupération des données"
+                    ],
+                    "correct_answer": "d"
+                  }
+                ]
+              },
+              {
+                "title": "Système de Gestion de Base de Données (SGBD)",
+                "mini_concepts": [
+                  {
+                    "title": "Système qui permet de gérer des bases de données partagées par plusieurs utilisateurs simultanément",
+                    "questions": [
+                      {
+                        "question": "Quel est le système qui permet de gérer des bases de données partagées par plusieurs utilisateurs simultanément ?",
+                        "options": [
+                          "Système de gestion de base de données relationnelle",
+                          "Système de gestion de base de données distribué",
+                          "Système de gestion de base de données réseau",
+                          "Système de gestion de base de données client-serveur"
+                        ],
+                        "correct_answer": "Système de gestion de base de données distribué"
+                      },
+                      {
+                        "question": "Quel est l'avantage principal d'un système de gestion de base de données distribué ?",
+                        "options": [
+                          "Amélioration de la sécurité des données",
+                          "Amélioration de la performance des requêtes",
+                          "Possibilité de partager les données entre plusieurs utilisateurs",
+                          "Réduction des coûts de maintenance"
+                        ],
+                        "correct_answer": "Possibilité de partager les données entre plusieurs utilisateurs"
+                      },
+                      {
+                        "question": "Quel est l'exemple d'un système de gestion de base de données distribué ?",
+                        "options": [
+                          "MySQL",
+                          "Oracle",
+                          "Microsoft SQL Server",
+                          "DB2"
+                        ],
+                        "correct_answer": "DB2"
+                      },
+                      {
+                        "question": "Quel est le principal inconvénient d'un système de gestion de base de données distribué ?",
+                        "options": [
+                          "Complexité de la mise en œuvre",
+                          "Coûts élevés de maintenance",
+                          "Risque de perte de données",
+                          "Baisse de la performance des requêtes"
+                        ],
+                        "correct_answer": "Complexité de la mise en œuvre"
+                      },
+                      {
+                        "question": "Quel est l'objectif principal d'un système de gestion de base de données distribué ?",
+                        "options": [
+                          "Améliorer la sécurité des données",
+                          "Améliorer la performance des requêtes",
+                          "Permettre la mise en œuvre de bases de données partagées",
+                          "Réduire les coûts de maintenance"
+                        ],
+                        "correct_answer": "Permettre la mise en œuvre de bases de données partagées"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Doit permettre de décrire les données, manipuler les données et contrôler les données",
+                    "questions": [
+                      {
+                        "question": "Quel est le rôle principal d'un langage de programmation ?",
+                        "options": [
+                          "Décrire les données",
+                          "Manipuler les données",
+                          "Contrôler les données",
+                          "Toutes les options ci-dessus"
+                        ],
+                        "correct_answer": "Toutes les options ci-dessus"
+                      },
+                      {
+                        "question": "Quel est l'objectif principal de la manipulation des données en programmation ?",
+                        "options": [
+                          "Stockage des données",
+                          "Traitement des données",
+                          "Analyse des données",
+                          "Modification des données"
+                        ],
+                        "correct_answer": "Modification des données"
+                      },
+                      {
+                        "question": "Quel est le but de la contrôle des données en programmation ?",
+                        "options": [
+                          "Vérifier l'intégrité des données",
+                          "Gérer les accès aux données",
+                          "Sécuriser les données",
+                          "Toutes les options ci-dessus"
+                        ],
+                        "correct_answer": "Toutes les options ci-dessus"
+                      },
+                      {
+                        "question": "Quel est l'exemple d'un langage de programmation qui permet de décrire, de manipuler et de contrôler les données ?",
+                        "options": [
+                          "Python",
+                          "Java",
+                          "C++",
+                          "Toutes les options ci-dessus"
+                        ],
+                        "correct_answer": "Toutes les options ci-dessus"
+                      },
+                      {
+                        "question": "Quel est le résultat de la combinaison de la description, de la manipulation et du contrôle des données en programmation ?",
+                        "options": [
+                          "Une application fonctionnelle",
+                          "Un système sécurisé",
+                          "Un programme efficace",
+                          "Un système complet"
+                        ],
+                        "correct_answer": "Un système complet"
+                      }
+                    ]
+                  }
+                ],
+                "questions": [
+                  {
+                    "question": "Quel est le rôle principal d'un SGBD (Système de Gestion de Base de Données) ?",
+                    "options": [
+                      "Créer des applications web",
+                      "Gérer les données d'une base de données",
+                      "Fournir un environnement de développement intégré",
+                      "Effectuer des analyses de données"
+                    ],
+                    "correct_answer": "Gérer les données d'une base de données"
+                  },
+                  {
+                    "question": "Qu'est-ce qu'un modèle de données dans un SGBD ?",
+                    "options": [
+                      "Un ensemble de règles pour gérer les accès à la base de données",
+                      "Un schéma qui décrit la structure des données stockées dans la base de données",
+                      "Un outil pour effectuer des requêtes sur les données",
+                      "Un logiciel pour créer des rapports"
+                    ],
+                    "correct_answer": "Un schéma qui décrit la structure des données stockées dans la base de données"
+                  },
+                  {
+                    "question": "Quel est l'avantage principal d'utiliser un SGBD ?",
+                    "options": [
+                      "Améliorer la sécurité des données",
+                      "Augmenter la vitesse de traitement des données",
+                      "Fournir une flexibilité pour gérer les données",
+                      "Réduire les coûts de maintenance"
+                    ],
+                    "correct_answer": "Fournir une flexibilité pour gérer les données"
+                  },
+                  {
+                    "question": "Qu'est-ce qu'une requête SQL dans un SGBD ?",
+                    "options": [
+                      "Un langage de programmation pour créer des applications",
+                      "Un langage de requête pour interroger les données dans une base de données",
+                      "Un outil pour créer des rapports",
+                      "Un logiciel pour effectuer des analyses de données"
+                    ],
+                    "correct_answer": "Un langage de requête pour interroger les données dans une base de données"
+                  },
+                  {
+                    "question": "Quel est le type de SGBD qui utilise une base de données relationnelle ?",
+                    "options": [
+                      "SGBD relationnel",
+                      "SGBD orienté objet",
+                      "SGBD orienté document",
+                      "SGBD graphique"
+                    ],
+                    "correct_answer": "SGBD relationnel"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "Qu'est-ce qu'une base de données ?",
+                "options": [
+                  "Un ensemble de données stockées sur un disque dur",
+                  "Un logiciel permettant de gérer et de partager des données",
+                  "Un système de gestion de bases de données (SGBD) qui permet de stocker, de manipuler et de partager des données",
+                  "Un langage de programmation utilisé pour créer des applications"
+                ],
+                "correct_answer": "c"
+              },
+              {
+                "question": "Quel est l'objectif principal d'une base de données ?",
+                "options": [
+                  "Stockage de fichiers",
+                  "Gestion de la communication entre les utilisateurs",
+                  "Stockage, manipulation et partage de données",
+                  "Création de rapports et de statistiques"
+                ],
+                "correct_answer": "c"
+              },
+              {
+                "question": "Qu'est-ce qu'un système de gestion de bases de données (SGBD) ?",
+                "options": [
+                  "Un logiciel permettant de gérer et de partager des données",
+                  "Un langage de programmation utilisé pour créer des applications",
+                  "Un ensemble de données stockées sur un disque dur",
+                  "Un logiciel qui gère et sécurise les données stockées dans une base de données"
+                ],
+                "correct_answer": "d"
+              },
+              {
+                "question": "Quels sont les principaux avantages d'utiliser une base de données ?",
+                "options": [
+                  "Amélioration de la productivité, réduction des coûts, amélioration de la qualité des données",
+                  "Amélioration de la sécurité, réduction des coûts, amélioration de la qualité des données",
+                  "Amélioration de la productivité, réduction de la sécurité, réduction de la qualité des données",
+                  "Réduction de la productivité, augmentation des coûts, réduction de la qualité des données"
+                ],
+                "correct_answer": "a"
+              },
+              {
+                "question": "Qu'est-ce qu'une table dans une base de données ?",
+                "options": [
+                  "Un ensemble de données stockées sur un disque dur",
+                  "Un logiciel permettant de gérer et de partager des données",
+                  "Un ensemble de lignes et de colonnes qui stockent des données",
+                  "Un langage de programmation utilisé pour créer des applications"
+                ],
+                "correct_answer": "c"
+              }
+            ]
+          },
+          {
+            "title": "Modèle relationnel",
+            "concepts": [
+              {
+                "title": "RefNomPrixStockZ12DELL500010Z24SUMSUNG70005Z26SONY60008IdTypeProduitquantitéDate1InZ1210012/09/20252OutZ24220/09/2025IdNomemailtéléphoneproduit1DELLcontact@dell.com0546787623Z122SUMSUNGcontact@sumsung.com0987654578Z243SONYcontact@sony.com0876548932Z26",
+                "questions": [
+                  {
+                    "question": "Quel est le nom du premier produit mentionné dans la liste ?",
+                    "options": [
+                      "DELL",
+                      "SUMSUNG",
+                      "SONY",
+                      "Acer"
+                    ],
+                    "correct_answer": "DELL"
+                  },
+                  {
+                    "question": "Quel est le nom de l'entreprise dont l'email est contact@dell.com ?",
+                    "options": [
+                      "DELL",
+                      "SUMSUNG",
+                      "SONY",
+                      "HP"
+                    ],
+                    "correct_answer": "DELL"
+                  },
+                  {
+                    "question": "Quel est le nom de l'entreprise dont le téléphone est 0876548932 ?",
+                    "options": [
+                      "DELL",
+                      "SUMSUNG",
+                      "SONY",
+                      "Lenovo"
+                    ],
+                    "correct_answer": "SONY"
+                  },
+                  {
+                    "question": "Quel est le nom du deuxième produit mentionné dans la liste ?",
+                    "options": [
+                      "DELL",
+                      "SUMSUNG",
+                      "SONY",
+                      "Asus"
+                    ],
+                    "correct_answer": "SUMSUNG"
+                  },
+                  {
+                    "question": "Quel est le nom de l'entreprise dont le téléphone est 0987654578 ?",
+                    "options": [
+                      "DELL",
+                      "SUMSUNG",
+                      "SONY",
+                      "MSI"
+                    ],
+                    "correct_answer": "SUMSUNG"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "Quel est le type de relation entre les tables 'AUTEUR' et 'LIVRE' dans un modèle relationnel ?",
+                "options": [
+                  "Une relation un-à-un",
+                  "Une relation un-à-plusieurs",
+                  "Une relation plus-à-plusieurs",
+                  "Une relation plus-à-un"
+                ],
+                "correct_answer": "Une relation un-à-plusieurs"
+              },
+              {
+                "question": "Quel est l'avantage d'utiliser un modèle relationnel pour stocker des données ?",
+                "options": [
+                  "Il permet de stocker des données non structurées",
+                  "Il permet de stocker des données structurées de manière efficace",
+                  "Il permet de stocker des données dans un fichier texte",
+                  "Il permet de stocker des données dans une base de données relationnelle"
+                ],
+                "correct_answer": "Il permet de stocker des données structurées de manière efficace"
+              },
+              {
+                "question": "Quel est le type de clé dans un modèle relationnel qui permet d'identifier une entité unique ?",
+                "options": [
+                  "Clé primaire",
+                  "Clé étrangère",
+                  "Clé secondaire",
+                  "Clé d'index"
+                ],
+                "correct_answer": "Clé primaire"
+              },
+              {
+                "question": "Quel est l'objectif principal d'un modèle relationnel ?",
+                "options": [
+                  "Stockage de données non structurées",
+                  "Stockage de données structurées de manière efficace",
+                  "Analyse de données",
+                  "Conception de bases de données"
+                ],
+                "correct_answer": "Stockage de données structurées de manière efficace"
+              },
+              {
+                "question": "Quel est le type de relation entre les tables 'COMMANDE' et 'CLIENT' dans un modèle relationnel ?",
+                "options": [
+                  "Une relation un-à-un",
+                  "Une relation un-à-plusieurs",
+                  "Une relation plus-à-plusieurs",
+                  "Une relation plus-à-un"
+                ],
+                "correct_answer": "Une relation un-à-plusieurs"
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "question": "Quel est le langage de requête standard pour les bases de données relationnelles ?",
+            "options": [
+              "SQL",
+              "PL/SQL",
+              "T-SQL",
+              "MySQL"
+            ],
+            "correct_answer": "SQL"
+          },
+          {
+            "question": "Quel est le type de base de données qui stocke les données dans des tables avec des enregistrements non structurés ?",
+            "options": [
+              "Base de données relationnelle",
+              "Base de données NoSQL",
+              "Base de données graphique",
+              "Base de données de fichiers"
+            ],
+            "correct_answer": "Base de données NoSQL"
+          },
+          {
+            "question": "Quel est le système de gestion de base de données open-source le plus populaire ?",
+            "options": [
+              "MySQL",
+              "PostgreSQL",
+              "Microsoft SQL Server",
+              "Oracle"
+            ],
+            "correct_answer": "MySQL"
+          },
+          {
+            "question": "Quel est le type de clé primaire qui est composée de plusieurs colonnes ?",
+            "options": [
+              "Clé primaire simple",
+              "Clé primaire composée",
+              "Clé étrangère",
+              "Clé d'index"
+            ],
+            "correct_answer": "Clé primaire composée"
+          },
+          {
+            "question": "Quel est le langage de programmation utilisé pour créer des applications web qui interagissent avec une base de données ?",
+            "options": [
+              "Java",
+              "Python",
+              "PHP",
+              "JavaScript"
+            ],
+            "correct_answer": "PHP"
+          }
+        ]
+      },
+      {
+        "title": "Langages de requête",
+        "mini_modules": [
+          {
+            "title": "SQL (Structured Query Language)",
+            "concepts": [
+              {
+                "title": "SQL est devenu le langage standard pour décrire et manipuler les BDR",
+                "questions": [
+                  {
+                    "question": "Quel est le langage standard pour décrire et manipuler les bases de données relationnelles (BDR) ?",
+                    "options": [
+                      "SQL",
+                      "PL/SQL",
+                      "T-SQL",
+                      "MySQL"
+                    ],
+                    "correct_answer": "SQL"
+                  },
+                  {
+                    "question": "Quel est l'avantage principal de l'utilisation de SQL pour manipuler les BDR ?",
+                    "options": [
+                      "Améliorer la sécurité des données",
+                      "Faciliter la maintenance des bases de données",
+                      "Permettre une manipulation flexible et standardisée des données",
+                      "Réduire les coûts de développement"
+                    ],
+                    "correct_answer": "Permettre une manipulation flexible et standardisée des données"
+                  },
+                  {
+                    "question": "Quel est le type de langage que SQL est considéré comme ?",
+                    "options": [
+                      "Langage de programmation",
+                      "Langage de script",
+                      "Langage de requête",
+                      "Langage de déclaration"
+                    ],
+                    "correct_answer": "Langage de requête"
+                  },
+                  {
+                    "question": "Quel est l'objectif principal de SQL dans la gestion des BDR ?",
+                    "options": [
+                      "Gérer les utilisateurs et les autorisations",
+                      "Créer et modifier les tables et les vues",
+                      "Exécuter des requêtes pour extraire et manipuler les données",
+                      "Optimiser les performances des bases de données"
+                    ],
+                    "correct_answer": "Exécuter des requêtes pour extraire et manipuler les données"
+                  },
+                  {
+                    "question": "Quel est le résultat de l'exécution d'une requête SQL sur une base de données ?",
+                    "options": [
+                      "Une modification des données de la base de données",
+                      "Une création d'une nouvelle table dans la base de données",
+                      "Un résultat de requête qui peut être affiché ou utilisé dans d'autres opérations",
+                      "Une erreur de syntaxe dans la requête SQL"
+                    ],
+                    "correct_answer": "Un résultat de requête qui peut être affiché ou utilisé dans d'autres opérations"
+                  }
+                ]
+              },
+              {
+                "title": "Les commandes SQL : CREATE, DROP, ALTER, SELECT, INSERT, UPDATE, DELETE",
+                "questions": [
+                  {
+                    "question": "Quelle commande SQL est utilisée pour créer une nouvelle table dans une base de données ?",
+                    "options": [
+                      "CREATE TABLE",
+                      "DROP TABLE",
+                      "ALTER TABLE",
+                      "INSERT INTO"
+                    ],
+                    "correct_answer": "CREATE TABLE"
+                  },
+                  {
+                    "question": "Quelle commande SQL est utilisée pour supprimer une table existante dans une base de données ?",
+                    "options": [
+                      "CREATE TABLE",
+                      "DROP TABLE",
+                      "ALTER TABLE",
+                      "TRUNCATE TABLE"
+                    ],
+                    "correct_answer": "DROP TABLE"
+                  },
+                  {
+                    "question": "Quelle commande SQL est utilisée pour modifier la structure d'une table existante dans une base de données ?",
+                    "options": [
+                      "CREATE TABLE",
+                      "DROP TABLE",
+                      "ALTER TABLE",
+                      "INSERT INTO"
+                    ],
+                    "correct_answer": "ALTER TABLE"
+                  },
+                  {
+                    "question": "Quelle commande SQL est utilisée pour récupérer des données d'une table dans une base de données ?",
+                    "options": [
+                      "SELECT",
+                      "INSERT INTO",
+                      "UPDATE",
+                      "DELETE"
+                    ],
+                    "correct_answer": "SELECT"
+                  },
+                  {
+                    "question": "Quelle commande SQL est utilisée pour insérer de nouvelles données dans une table existante dans une base de données ?",
+                    "options": [
+                      "INSERT INTO",
+                      "UPDATE",
+                      "DELETE",
+                      "CREATE TABLE"
+                    ],
+                    "correct_answer": "INSERT INTO"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "What is the purpose of the GROUP BY clause in SQL?",
+                "options": [
+                  "To sort data in ascending or descending order",
+                  "To filter data based on conditions",
+                  "To group similar data together for aggregation",
+                  "To create a new table with specific columns"
+                ],
+                "correct_answer": "To group similar data together for aggregation"
+              },
+              {
+                "question": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+                "options": [
+                  "INNER JOIN returns all rows from both tables, while LEFT JOIN returns only matching rows",
+                  "INNER JOIN returns only matching rows, while LEFT JOIN returns all rows from the left table",
+                  "INNER JOIN returns all rows from the left table, while LEFT JOIN returns all rows from the right table",
+                  "INNER JOIN returns all rows from both tables, while LEFT JOIN returns only matching rows"
+                ],
+                "correct_answer": "INNER JOIN returns only matching rows, while LEFT JOIN returns all rows from the left table"
+              },
+              {
+                "question": "What is the purpose of the LIMIT clause in SQL?",
+                "options": [
+                  "To sort data in ascending or descending order",
+                  "To filter data based on conditions",
+                  "To limit the number of rows returned in a query",
+                  "To create a new table with specific columns"
+                ],
+                "correct_answer": "To limit the number of rows returned in a query"
+              },
+              {
+                "question": "What is the difference between the AND and OR operators in SQL?",
+                "options": [
+                  "AND returns true if both conditions are true, while OR returns true if either condition is true",
+                  "AND returns true if either condition is true, while OR returns true if both conditions are true",
+                  "AND returns false if either condition is true, while OR returns false if both conditions are true",
+                  "AND returns false if both conditions are true, while OR returns false if either condition is true"
+                ],
+                "correct_answer": "AND returns true if both conditions are true, while OR returns true if either condition is true"
+              },
+              {
+                "question": "What is the purpose of the ORDER BY clause in SQL?",
+                "options": [
+                  "To group similar data together for aggregation",
+                  "To filter data based on conditions",
+                  "To sort data in ascending or descending order",
+                  "To create a new table with specific columns"
+                ],
+                "correct_answer": "To sort data in ascending or descending order"
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "question": "Quel langage de requête est développé par Google ?",
+            "options": [
+              "SQL",
+              "MongoDB",
+              "Apache Hive",
+              "BigQuery"
+            ],
+            "correct_answer": "BigQuery"
+          },
+          {
+            "question": "Quel langage de requête est utilisé pour interroger des bases de données relationnelles ?",
+            "options": [
+              "SQL",
+              "MongoDB",
+              "Apache Hive",
+              "GraphQL"
+            ],
+            "correct_answer": "SQL"
+          },
+          {
+            "question": "Quel langage de requête est utilisé pour interroger des bases de données NoSQL ?",
+            "options": [
+              "SQL",
+              "MongoDB",
+              "Apache Hive",
+              "GraphQL"
+            ],
+            "correct_answer": "MongoDB"
+          },
+          {
+            "question": "Quel langage de requête est utilisé pour interroger des données stockées dans des systèmes de gestion de données distribués ?",
+            "options": [
+              "SQL",
+              "Apache Hive",
+              "BigQuery",
+              "Apache Pig"
+            ],
+            "correct_answer": "Apache Hive"
+          },
+          {
+            "question": "Quel langage de requête est utilisé pour interroger des données stockées dans des bases de données graphiques ?",
+            "options": [
+              "SQL",
+              "GraphQL",
+              "Cypher",
+              "Apache Pig"
+            ],
+            "correct_answer": "Cypher"
+          }
+        ]
+      },
+      {
+        "title": "Java et bases de données",
+        "mini_modules": [
+          {
+            "title": "Java DataBase Connectivity (JDBC)",
+            "concepts": [
+              {
+                "title": "Une API Java pour connecter des programmes java à des SGBD",
+                "questions": [
+                  {
+                    "question": "Quel est le nom de l'API Java la plus couramment utilisée pour se connecter à un SGBD ?",
+                    "options": [
+                      "JDBC",
+                      "Hibernate",
+                      "Spring Data JPA",
+                      "MyBatis"
+                    ],
+                    "correct_answer": "JDBC"
+                  },
+                  {
+                    "question": "Quel est l'avantage principal de l'utilisation de l'API JDBC ?",
+                    "options": [
+                      "Améliorer la sécurité des données",
+                      "Réduire la complexité du code",
+                      "Permettre la connexion à différents SGBD",
+                      "Améliorer les performances du système"
+                    ],
+                    "correct_answer": "Permettre la connexion à différents SGBD"
+                  },
+                  {
+                    "question": "Quel est le nom de l'API Java qui permet de mapper les objets Java à des tables de base de données ?",
+                    "options": [
+                      "JPA",
+                      "Hibernate",
+                      "Spring Data JPA",
+                      "MyBatis"
+                    ],
+                    "correct_answer": "JPA"
+                  },
+                  {
+                    "question": "Quel est l'avantage principal de l'utilisation de l'API Hibernate ?",
+                    "options": [
+                      "Améliorer la sécurité des données",
+                      "Réduire la complexité du code",
+                      "Permettre la connexion à différents SGBD",
+                      "Améliorer les performances du système"
+                    ],
+                    "correct_answer": "Réduire la complexité du code"
+                  },
+                  {
+                    "question": "Quel est le nom de l'API Java qui permet de gérer les données de base de données de manière déclarative ?",
+                    "options": [
+                      "Spring Data JPA",
+                      "JPA",
+                      "Hibernate",
+                      "MyBatis"
+                    ],
+                    "correct_answer": "Spring Data JPA"
+                  }
+                ]
+              },
+              {
+                "title": "Un ensemble de classes et interfaces java",
+                "questions": [
+                  {
+                    "question": "Quelle est la différence principale entre une classe et une interface en Java ?",
+                    "options": [
+                      "Une classe peut hériter de plusieurs interfaces, mais une interface ne peut hériter que d'une classe.",
+                      "Une classe peut implémenter plusieurs interfaces, mais une interface ne peut implémenter que une classe.",
+                      "Une classe peut être étendue par d'autres classes, mais une interface ne peut être étendue que par des classes.",
+                      "Une classe peut être implémentée par d'autres classes, mais une interface ne peut être implémentée que par des classes."
+                    ],
+                    "correct_answer": "Une classe peut hériter de plusieurs interfaces, mais une interface ne peut hériter que d'une classe."
+                  },
+                  {
+                    "question": "Quel est l'objectif principal d'une interface en Java ?",
+                    "options": [
+                      "Définir la structure d'une classe",
+                      "Définir le comportement d'une classe",
+                      "Définir les méthodes que doivent implémenter les classes qui la héritent",
+                      "Définir les propriétés d'une classe"
+                    ],
+                    "correct_answer": "Définir les méthodes que doivent implémenter les classes qui la héritent"
+                  },
+                  {
+                    "question": "Quelle est la différence entre un constructeur et un méthode en Java ?",
+                    "options": [
+                      "Un constructeur est appelé lors de la création d'un objet, tandis qu'une méthode est appelée lors de l'utilisation d'un objet.",
+                      "Un constructeur est utilisé pour définir les propriétés d'un objet, tandis qu'une méthode est utilisée pour modifier les propriétés d'un objet.",
+                      "Un constructeur est utilisé pour initialiser les propriétés d'un objet, tandis qu'une méthode est utilisée pour modifier les propriétés d'un objet.",
+                      "Un constructeur est utilisé pour définir le comportement d'un objet, tandis qu'une méthode est utilisée pour modifier le comportement d'un objet."
+                    ],
+                    "correct_answer": "Un constructeur est utilisé pour initialiser les propriétés d'un objet, tandis qu'une méthode est utilisée pour modifier les propriétés d'un objet."
+                  },
+                  {
+                    "question": "Quel est l'objectif principal d'une classe abstraite en Java ?",
+                    "options": [
+                      "Définir une classe qui ne peut pas être instanciée",
+                      "Définir une classe qui peut être étendue par d'autres classes",
+                      "Définir une classe qui peut être implémentée par d'autres classes",
+                      "Définir une classe qui peut être utilisée comme modèle pour d'autres classes"
+                    ],
+                    "correct_answer": "Définir une classe qui ne peut pas être instanciée"
+                  },
+                  {
+                    "question": "Quelle est la différence entre un package et un namespace en Java ?",
+                    "options": [
+                      "Un package est utilisé pour organiser les classes, tandis qu'un namespace est utilisé pour définir les classes.",
+                      "Un package est utilisé pour définir les classes, tandis qu'un namespace est utilisé pour organiser les classes.",
+                      "Un package est utilisé pour organiser les classes, tandis qu'un namespace est utilisé pour définir les classes.",
+                      "Un package et un namespace sont utilisés pour les mêmes choses."
+                    ],
+                    "correct_answer": "Un package est utilisé pour organiser les classes, tandis qu'un namespace est utilisé pour définir les classes."
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "What is the primary purpose of the JDBC DriverManager class?",
+                "options": [
+                  "To establish a connection to a database",
+                  "To execute SQL queries on a database",
+                  "To manage database connections",
+                  "To handle database transactions"
+                ],
+                "correct_answer": "To establish a connection to a database"
+              },
+              {
+                "question": "What is the correct order of steps to connect to a database using JDBC?",
+                "options": [
+                  "Register the driver, load the driver, establish the connection",
+                  "Load the driver, register the driver, establish the connection",
+                  "Establish the connection, load the driver, register the driver",
+                  "Register the driver, establish the connection, load the driver"
+                ],
+                "correct_answer": "Register the driver, load the driver, establish the connection"
+              },
+              {
+                "question": "What is the purpose of the JDBC ResultSet object?",
+                "options": [
+                  "To execute SQL queries on a database",
+                  "To store the results of a SQL query",
+                  "To manage database connections",
+                  "To handle database transactions"
+                ],
+                "correct_answer": "To store the results of a SQL query"
+              },
+              {
+                "question": "What is the correct way to close a JDBC Statement object?",
+                "options": [
+                  "statement.close()",
+                  "statement.executeQuery()",
+                  "statement.executeUpdate()",
+                  "statement.close() and statement.getConnection().close()"
+                ],
+                "correct_answer": "statement.close()"
+              },
+              {
+                "question": "What is the purpose of the JDBC Connection object's commit() method?",
+                "options": [
+                  "To roll back changes made to the database",
+                  "To save changes made to the database",
+                  "To execute a SQL query",
+                  "To close the database connection"
+                ],
+                "correct_answer": "To save changes made to the database"
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "question": "Quel est le type de base de données relationnelle la plus couramment utilisée en Java ?",
+            "options": [
+              "MySQL",
+              "PostgreSQL",
+              "Oracle",
+              "Microsoft SQL Server"
+            ],
+            "correct_answer": "MySQL"
+          },
+          {
+            "question": "Quel est l'interface Java pour interagir avec les bases de données relationnelles ?",
+            "options": [
+              "JDBC",
+              "JPA",
+              "Hibernate",
+              "Spring Data JPA"
+            ],
+            "correct_answer": "JDBC"
+          },
+          {
+            "question": "Quel est le langage de requête utilisé pour interagir avec les bases de données relationnelles ?",
+            "options": [
+              "SQL",
+              "PL/SQL",
+              "T-SQL",
+              "MySQL"
+            ],
+            "correct_answer": "SQL"
+          },
+          {
+            "question": "Quel est le framework Java pour la gestion des objets persistants ?",
+            "options": [
+              "Hibernate",
+              "JPA",
+              "Spring Data JPA",
+              "EclipseLink"
+            ],
+            "correct_answer": "JPA"
+          },
+          {
+            "question": "Quel est le type de base de données NoSQL la plus couramment utilisée en Java ?",
+            "options": [
+              "MongoDB",
+              "Cassandra",
+              "Redis",
+              "RavenDB"
+            ],
+            "correct_answer": "MongoDB"
+          }
+        ]
+      },
+      {
+        "title": "Framework de persistance (Hibernate)",
+        "mini_modules": [
+          {
+            "title": "Introduction",
+            "concepts": [
+              {
+                "title": "Hibernate est un Framework Java de persistance qui permet de faire correspondre des tables de base de données relationnelles avec des objets Java",
+                "questions": [
+                  {
+                    "question": "Quel est le but principal de Hibernate dans un projet Java ?",
+                    "options": [
+                      "Gérer les threads dans un programme Java",
+                      "Faire correspondre des tables de base de données relationnelles avec des objets Java",
+                      "Gérer les exceptions dans un programme Java",
+                      "Gérer les connexions réseau dans un programme Java"
+                    ],
+                    "correct_answer": "Faire correspondre des tables de base de données relationnelles avec des objets Java"
+                  },
+                  {
+                    "question": "Quel est le type de base de données que Hibernate est conçu pour gérer ?",
+                    "options": [
+                      "Base de données NoSQL",
+                      "Base de données relationnelle",
+                      "Base de données graphique",
+                      "Base de données de fichiers"
+                    ],
+                    "correct_answer": "Base de données relationnelle"
+                  },
+                  {
+                    "question": "Quel est l'avantage principal de l'utilisation de Hibernate dans un projet Java ?",
+                    "options": [
+                      "Améliorer la sécurité des données",
+                      "Améliorer les performances du programme",
+                      "Réduire la complexité du code",
+                      "Faire correspondre des tables de base de données relationnelles avec des objets Java"
+                    ],
+                    "correct_answer": "Faire correspondre des tables de base de données relationnelles avec des objets Java"
+                  },
+                  {
+                    "question": "Quel est le langage de programmation pour lequel Hibernate est principalement conçu ?",
+                    "options": [
+                      "Java",
+                      "Python",
+                      "C++",
+                      "JavaScript"
+                    ],
+                    "correct_answer": "Java"
+                  },
+                  {
+                    "question": "Quel est le nom du modèle de programmation utilisé par Hibernate pour gérer les objets Java ?",
+                    "options": [
+                      "Model-View-Controller",
+                      "Object-Relational Mapping",
+                      "Data Access Object",
+                      "Service-Oriented Architecture"
+                    ],
+                    "correct_answer": "Object-Relational Mapping"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "What is the primary purpose of an introduction in a piece of writing?",
+                "options": [
+                  "To summarize the main points of the text",
+                  "To grab the reader's attention and provide context",
+                  "To provide a detailed analysis of the topic",
+                  "To conclude the text and leave a lasting impression"
+                ],
+                "correct_answer": "To grab the reader's attention and provide context"
+              },
+              {
+                "question": "What is the typical structure of an introduction?",
+                "options": [
+                  "A hook, a thesis statement, and a conclusion",
+                  "A thesis statement, a hook, and a transition",
+                  "A hook, a transition, and a thesis statement",
+                  "A thesis statement, a transition, and a conclusion"
+                ],
+                "correct_answer": "A hook, a thesis statement, and a conclusion"
+              },
+              {
+                "question": "What is the purpose of a thesis statement in an introduction?",
+                "options": [
+                  "To provide a brief summary of the main points",
+                  "To state the main argument or claim",
+                  "To ask a question that will be answered later",
+                  "To provide a definition of the topic"
+                ],
+                "correct_answer": "To state the main argument or claim"
+              },
+              {
+                "question": "What is the role of background information in an introduction?",
+                "options": [
+                  "To provide a detailed analysis of the topic",
+                  "To provide context and background information",
+                  "To summarize the main points of the text",
+                  "To conclude the text and leave a lasting impression"
+                ],
+                "correct_answer": "To provide context and background information"
+              },
+              {
+                "question": "What is the purpose of a hook in an introduction?",
+                "options": [
+                  "To grab the reader's attention and provide context",
+                  "To summarize the main points of the text",
+                  "To provide a detailed analysis of the topic",
+                  "To conclude the text and leave a lasting impression"
+                ],
+                "correct_answer": "To grab the reader's attention and provide context"
+              }
+            ]
+          },
+          {
+            "title": "Mise en œuvre du Framework Hibernate",
+            "concepts": [
+              {
+                "title": "Une classe de type JavaBean qui encapsule les données d'une table de base de données",
+                "questions": [
+                  {
+                    "question": "Quel est le but principal d'une classe JavaBean ?",
+                    "options": [
+                      "Créer une interface de programmation d'applications",
+                      "Encapsuler les données d'une table de base de données",
+                      "Fournir une méthode de stockage de données",
+                      "Créer un modèle de données pour une application"
+                    ],
+                    "correct_answer": "Encapsuler les données d'une table de base de données"
+                  },
+                  {
+                    "question": "Quels sont les caractéristiques d'une classe JavaBean ?",
+                    "options": [
+                      "Elle doit avoir un constructeur par défaut",
+                      "Elle doit avoir des propriétés privées",
+                      "Elle doit avoir des méthodes de getter et de setter",
+                      "Toutes les options ci-dessus"
+                    ],
+                    "correct_answer": "Toutes les options ci-dessus"
+                  },
+                  {
+                    "question": "Quel est l'avantage d'utiliser une classe JavaBean ?",
+                    "options": [
+                      "Elle permet de réduire la complexité du code",
+                      "Elle permet d'améliorer la sécurité des données",
+                      "Elle permet de faciliter la maintenance du code",
+                      "Toutes les options ci-dessus"
+                    ],
+                    "correct_answer": "Toutes les options ci-dessus"
+                  },
+                  {
+                    "question": "Quel est le type de classe qui encapsule les données d'une table de base de données ?",
+                    "options": [
+                      "Classe POJO",
+                      "Classe JavaBean",
+                      "Classe DAO",
+                      "Classe DTO"
+                    ],
+                    "correct_answer": "Classe JavaBean"
+                  },
+                  {
+                    "question": "Quel est l'exemple d'une classe JavaBean qui encapsule les données d'une table de base de données ?",
+                    "options": [
+                      "Classe Utilisateur",
+                      "Classe Produit",
+                      "Classe Commande",
+                      "Toutes les options ci-dessus"
+                    ],
+                    "correct_answer": "Toutes les options ci-dessus"
+                  }
+                ]
+              },
+              {
+                "title": "Des propriétés de configuration, notamment des informations concernant la connexion à la base de données",
+                "questions": [
+                  {
+                    "question": "Quel est le nom du fichier de configuration qui contient les informations de connexion à la base de données dans une application Java ?",
+                    "options": [
+                      "application.properties",
+                      "database.properties",
+                      "config.properties",
+                      "pom.xml"
+                    ],
+                    "correct_answer": "application.properties"
+                  },
+                  {
+                    "question": "Quel est le nom de la propriété qui définit l'URL de la base de données dans une application Spring Boot ?",
+                    "options": [
+                      "spring.datasource.url",
+                      "spring.datasource.username",
+                      "spring.datasource.password",
+                      "spring.datasource.driver-class-name"
+                    ],
+                    "correct_answer": "spring.datasource.url"
+                  },
+                  {
+                    "question": "Quel est le nom de la propriété qui définit le nom d'utilisateur pour la connexion à la base de données dans une application Spring Boot ?",
+                    "options": [
+                      "spring.datasource.username",
+                      "spring.datasource.password",
+                      "spring.datasource.driver-class-name",
+                      "spring.datasource.url"
+                    ],
+                    "correct_answer": "spring.datasource.username"
+                  },
+                  {
+                    "question": "Quel est le nom de la propriété qui définit le mot de passe pour la connexion à la base de données dans une application Spring Boot ?",
+                    "options": [
+                      "spring.datasource.password",
+                      "spring.datasource.username",
+                      "spring.datasource.driver-class-name",
+                      "spring.datasource.url"
+                    ],
+                    "correct_answer": "spring.datasource.password"
+                  },
+                  {
+                    "question": "Quel est le nom de la propriété qui définit le nom de la classe de driver pour la connexion à la base de données dans une application Spring Boot ?",
+                    "options": [
+                      "spring.datasource.driver-class-name",
+                      "spring.datasource.username",
+                      "spring.datasource.password",
+                      "spring.datasource.url"
+                    ],
+                    "correct_answer": "spring.datasource.driver-class-name"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "Quel est le but principal du mapping dans Hibernate ?",
+                "options": [
+                  "Créer des relations entre les tables de la base de données",
+                  "Définir les champs et les types de données des objets Java",
+                  "Gérer les transactions et les connexions à la base de données",
+                  "Configurer les stratégies de persistance des objets Java"
+                ],
+                "correct_answer": "Définir les champs et les types de données des objets Java"
+              },
+              {
+                "question": "Quel est le rôle du fichier hibernate.cfg.xml dans une application Hibernate ?",
+                "options": [
+                  "Définir les mappages des objets Java à la base de données",
+                  "Configurer les stratégies de persistance des objets Java",
+                  "Définir les paramètres de connexion à la base de données",
+                  "Gérer les transactions et les connexions à la base de données"
+                ],
+                "correct_answer": "Définir les paramètres de connexion à la base de données"
+              },
+              {
+                "question": "Quelle est la différence principale entre les sessions et les transactions dans Hibernate ?",
+                "options": [
+                  "Une session est une transaction, et une transaction est une session",
+                  "Une session est un objet qui représente une connexion à la base de données, et une transaction est un objet qui représente une unité de travail",
+                  "Une session est un objet qui représente une unité de travail, et une transaction est un objet qui représente une connexion à la base de données",
+                  "Une session et une transaction sont interchangeables"
+                ],
+                "correct_answer": "Une session est un objet qui représente une connexion à la base de données, et une transaction est un objet qui représente une unité de travail"
+              },
+              {
+                "question": "Quel est le but du mécanisme de cache dans Hibernate ?",
+                "options": [
+                  "Améliorer les performances en réduisant le nombre de requêtes SQL",
+                  "Gérer les transactions et les connexions à la base de données",
+                  "Définir les mappages des objets Java à la base de données",
+                  "Configurer les stratégies de persistance des objets Java"
+                ],
+                "correct_answer": "Améliorer les performances en réduisant le nombre de requêtes SQL"
+              },
+              {
+                "question": "Quel est le rôle du mécanisme de lazy loading dans Hibernate ?",
+                "options": [
+                  "Charger les objets associés d'une session uniquement lorsqu'ils sont réellement nécessaires",
+                  "Charger tous les objets associés d'une session en même temps",
+                  "Gérer les transactions et les connexions à la base de données",
+                  "Configurer les stratégies de persistance des objets Java"
+                ],
+                "correct_answer": "Charger les objets associés d'une session uniquement lorsqu'ils sont réellement nécessaires"
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "question": "Quel est le but principal de Hibernate dans un projet Java ?",
+            "options": [
+              "Gérer les threads dans une application",
+              "Fournir une abstraction pour les bases de données",
+              "Gérer les sessions et les transactions de base de données",
+              "Créer des interfaces graphiques pour les applications"
+            ],
+            "correct_answer": "Fournir une abstraction pour les bases de données"
+          },
+          {
+            "question": "Qu'est-ce que la session dans Hibernate ?",
+            "options": [
+              "Un objet qui représente une transaction de base de données",
+              "Un objet qui représente une connexion à une base de données",
+              "Un objet qui représente une collection d'objets persistants",
+              "Un objet qui représente une requête SQL"
+            ],
+            "correct_answer": "Un objet qui représente une collection d'objets persistants"
+          },
+          {
+            "question": "Quel est le rôle du mapping dans Hibernate ?",
+            "options": [
+              "Définir les relations entre les tables de la base de données",
+              "Définir les champs d'une classe Java qui correspondent aux colonnes d'une table",
+              "Gérer les transactions de base de données",
+              "Créer des vues dans la base de données"
+            ],
+            "correct_answer": "Définir les champs d'une classe Java qui correspondent aux colonnes d'une table"
+          },
+          {
+            "question": "Qu'est-ce que la transaction dans Hibernate ?",
+            "options": [
+              "Un objet qui représente une requête SQL",
+              "Un objet qui représente une collection d'objets persistants",
+              "Un objet qui représente une unité de travail qui inclut plusieurs opérations de base de données",
+              "Un objet qui représente une connexion à une base de données"
+            ],
+            "correct_answer": "Un objet qui représente une unité de travail qui inclut plusieurs opérations de base de données"
+          },
+          {
+            "question": "Quel est le but de la classe HibernateUtil dans un projet Java ?",
+            "options": [
+              "Fournir une abstraction pour les bases de données",
+              "Gérer les sessions et les transactions de base de données",
+              "Créer des interfaces graphiques pour les applications",
+              "Initialiser la configuration de Hibernate"
+            ],
+            "correct_answer": "Initialiser la configuration de Hibernate"
+          }
+        ]
+      },
+      {
+        "title": "Première application",
+        "mini_modules": [
+          {
+            "title": "Création de la base de données",
+            "concepts": [
+              {
+                "title": "Créer une base de données « magasin »",
+                "questions": [
+                  {
+                    "question": "Quel est le nom de la table qui stocke les informations sur les produits dans une base de données 'magasin'?",
+                    "options": [
+                      "Produits",
+                      "Articles",
+                      "Magasins",
+                      "Fournisseurs"
+                    ],
+                    "correct_answer": "Produits"
+                  },
+                  {
+                    "question": "Quel est le type de relation entre les tables 'Produits' et 'Fournisseurs' dans une base de données 'magasin'?",
+                    "options": [
+                      "Une-to-one",
+                      "Une-to-many",
+                      "Many-to-one",
+                      "Many-to-many"
+                    ],
+                    "correct_answer": "Many-to-one"
+                  },
+                  {
+                    "question": "Quel est le nom de la clé primaire de la table 'Produits' dans une base de données 'magasin'?",
+                    "options": [
+                      "ID",
+                      "CodeProduit",
+                      "NomProduit",
+                      "PrixProduit"
+                    ],
+                    "correct_answer": "ID"
+                  },
+                  {
+                    "question": "Quel est le nom de la table qui stocke les informations sur les commandes dans une base de données 'magasin'?",
+                    "options": [
+                      "Commandes",
+                      "ProduitsCommandes",
+                      "Clients",
+                      "Livraisons"
+                    ],
+                    "correct_answer": "Commandes"
+                  },
+                  {
+                    "question": "Quel est le type de jointure entre les tables 'Commandes' et 'Produits' dans une base de données 'magasin'?",
+                    "options": [
+                      "Intérieur",
+                      "Exterieur",
+                      "Croisé",
+                      "Gauche"
+                    ],
+                    "correct_answer": "Exterieur"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "Quel est le langage de requête SQL le plus couramment utilisé pour interagir avec une base de données ?",
+                "options": [
+                  "MySQL",
+                  "PostgreSQL",
+                  "Microsoft SQL Server",
+                  "Oracle"
+                ],
+                "correct_answer": "MySQL"
+              },
+              {
+                "question": "Quel est le type de clé primaire dans une base de données relationnelle ?",
+                "options": [
+                  "Clé étrangère",
+                  "Clé primaire",
+                  "Clé secondaire",
+                  "Clé composite"
+                ],
+                "correct_answer": "Clé primaire"
+              },
+              {
+                "question": "Quel est l'objectif principal d'une base de données normalisée ?",
+                "options": [
+                  "Améliorer la sécurité des données",
+                  "Réduire les coûts de stockage",
+                  "Améliorer la performance des requêtes",
+                  "Réduire les erreurs de données"
+                ],
+                "correct_answer": "Réduire les erreurs de données"
+              },
+              {
+                "question": "Quel est le type de relation entre deux tables dans une base de données relationnelle ?",
+                "options": [
+                  "Relation 1-1",
+                  "Relation 1-n",
+                  "Relation n-1",
+                  "Relation n-n"
+                ],
+                "correct_answer": "Relation 1-n"
+              },
+              {
+                "question": "Quel est le langage de programmation le plus couramment utilisé pour créer des applications web qui interagissent avec une base de données ?",
+                "options": [
+                  "PHP",
+                  "Python",
+                  "Java",
+                  "JavaScript"
+                ],
+                "correct_answer": "PHP"
+              }
+            ]
+          },
+          {
+            "title": "Configurer Hibernate",
+            "concepts": [
+              {
+                "title": "Configurer le fichier hibernate.cfg.xml",
+                "questions": [
+                  {
+                    "question": "Quel est le nom du fichier de configuration par défaut pour Hibernate ?",
+                    "options": [
+                      "hibernate.cfg.xml",
+                      "hibernate.properties",
+                      "hibernate.config",
+                      "hibernate.settings"
+                    ],
+                    "correct_answer": "hibernate.cfg.xml"
+                  },
+                  {
+                    "question": "Quel est l'élément racine du fichier hibernate.cfg.xml ?",
+                    "options": [
+                      "<hibernate-configuration>",
+                      "<hibernate-settings>",
+                      "<hibernate-properties>",
+                      "<hibernate-mapping>"
+                    ],
+                    "correct_answer": "<hibernate-configuration>"
+                  },
+                  {
+                    "question": "Quel est le nom de la balise qui définit la connexion à la base de données dans le fichier hibernate.cfg.xml ?",
+                    "options": [
+                      "<property name='connection.driver_class'/>",
+                      "<property name='connection.url'/>",
+                      "<property name='connection.username'/>",
+                      "<property name='connection.password'/>"
+                    ],
+                    "correct_answer": "<property name='connection.driver_class'/>"
+                  },
+                  {
+                    "question": "Quel est le nom de la balise qui définit le dialect de la base de données dans le fichier hibernate.cfg.xml ?",
+                    "options": [
+                      "<property name='hibernate.dialect'/>",
+                      "<property name='hibernate.connection.driver_class'/>",
+                      "<property name='hibernate.connection.url'/>",
+                      "<property name='hibernate.connection.username'/>"
+                    ],
+                    "correct_answer": "<property name='hibernate.dialect'/>"
+                  },
+                  {
+                    "question": "Quel est le nom de la balise qui définit le nom de la base de données dans le fichier hibernate.cfg.xml ?",
+                    "options": [
+                      "<property name='hibernate.connection.url'/>",
+                      "<property name='hibernate.connection.username'/>",
+                      "<property name='hibernate.connection.password'/>",
+                      "<property name='hibernate.connection.driver_class'/>"
+                    ],
+                    "correct_answer": "<property name='hibernate.connection.url'/>"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "Quel est le rôle de la propriété @Entity dans l'annotation de Hibernate?",
+                "options": [
+                  "Définir la table de stockage dans la base de données",
+                  "Définir le nom de la classe dans la base de données",
+                  "Définir la classe comme entité persistante",
+                  "Définir la clé primaire de la table"
+                ],
+                "correct_answer": "c"
+              },
+              {
+                "question": "Quel est le but de la propriété @Table dans l'annotation de Hibernate?",
+                "options": [
+                  "Définir la table de stockage dans la base de données",
+                  "Définir le nom de la classe dans la base de données",
+                  "Définir la clé primaire de la table",
+                  "Définir les propriétés de la table"
+                ],
+                "correct_answer": "d"
+              },
+              {
+                "question": "Quel est le rôle de la propriété @Id dans l'annotation de Hibernate?",
+                "options": [
+                  "Définir la clé primaire de la table",
+                  "Définir la clé étrangère de la table",
+                  "Définir la clé unique de la table",
+                  "Définir la clé composite de la table"
+                ],
+                "correct_answer": "a"
+              },
+              {
+                "question": "Quel est le but de la propriété @ManyToOne dans l'annotation de Hibernate?",
+                "options": [
+                  "Définir une relation un-à-un entre les entités",
+                  "Définir une relation un-à-plusieurs entre les entités",
+                  "Définir une relation plusieurs-à-plusieurs entre les entités",
+                  "Définir une relation de jointure entre les entités"
+                ],
+                "correct_answer": "b"
+              },
+              {
+                "question": "Quel est le rôle de la propriété @OneToMany dans l'annotation de Hibernate?",
+                "options": [
+                  "Définir une relation un-à-un entre les entités",
+                  "Définir une relation un-à-plusieurs entre les entités",
+                  "Définir une relation plusieurs-à-plusieurs entre les entités",
+                  "Définir une relation de jointure entre les entités"
+                ],
+                "correct_answer": "b"
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "question": "Quel est le premier logiciel développé par Alan Turing ?",
+            "options": [
+              "Bletchley",
+              "Colossus",
+              "Pascal",
+              "Plankalkül"
+            ],
+            "correct_answer": "Colossus"
+          },
+          {
+            "question": "Quel est le premier langage de programmation créé par Ada Lovelace ?",
+            "options": [
+              "Ada",
+              "Pascal",
+              "Fortran",
+              "COBOL"
+            ],
+            "correct_answer": "Ada"
+          },
+          {
+            "question": "Quel est le premier ordinateur électronique développé par John Atanasoff et Clifford Berry ?",
+            "options": [
+              "ENIAC",
+              "UNIVAC",
+              "ABC",
+              "Atanasoff-Berry Computer"
+            ],
+            "correct_answer": "Atanasoff-Berry Computer"
+          },
+          {
+            "question": "Quel est le premier langage de programmation créé par John McCarthy ?",
+            "options": [
+              "Lisp",
+              "Prolog",
+              "Simula",
+              "Smalltalk"
+            ],
+            "correct_answer": "Lisp"
+          },
+          {
+            "question": "Quel est le premier ordinateur développé par Charles Babbage ?",
+            "options": [
+              "Analyseur Numérique",
+              "Machine de Difference",
+              "Machine de Calcul",
+              "Difference Engine"
+            ],
+            "correct_answer": "Difference Engine"
+          }
+        ]
+      },
+      {
+        "title": "Exercice",
+        "mini_modules": [
+          {
+            "title": "Créer un menu et programmer les instructions liées à chaque entrée du menu",
+            "concepts": [
+              {
+                "title": "Implémenter les CRUD (Create, Read, Update et Delete)",
+                "questions": [
+                  {
+                    "question": "Quel est l'opération qui permet de créer un nouveau document dans une base de données ?",
+                    "options": [
+                      "Insertion",
+                      "Mise à jour",
+                      "Suppression",
+                      "Lecture"
+                    ],
+                    "correct_answer": "Insertion"
+                  },
+                  {
+                    "question": "Quel est l'opération qui permet de récupérer un document existant dans une base de données ?",
+                    "options": [
+                      "Insertion",
+                      "Mise à jour",
+                      "Suppression",
+                      "Lecture"
+                    ],
+                    "correct_answer": "Lecture"
+                  },
+                  {
+                    "question": "Quel est l'opération qui permet de modifier un document existant dans une base de données ?",
+                    "options": [
+                      "Insertion",
+                      "Mise à jour",
+                      "Suppression",
+                      "Lecture"
+                    ],
+                    "correct_answer": "Mise à jour"
+                  },
+                  {
+                    "question": "Quel est l'opération qui permet de supprimer un document existant dans une base de données ?",
+                    "options": [
+                      "Insertion",
+                      "Mise à jour",
+                      "Suppression",
+                      "Lecture"
+                    ],
+                    "correct_answer": "Suppression"
+                  },
+                  {
+                    "question": "Quels sont les opérations CRUD ?",
+                    "options": [
+                      "Insertion, Mise à jour, Suppression",
+                      "Insertion, Lecture, Suppression",
+                      "Insertion, Mise à jour, Lecture",
+                      "Insertion, Mise à jour, Suppression, Lecture"
+                    ],
+                    "correct_answer": "Insertion, Mise à jour, Suppression, Lecture"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "Quel est le premier pas pour créer un menu en programmation ?",
+                "options": [
+                  "Définir les options du menu",
+                  "Créer les fonctions associées à chaque option",
+                  "Afficher le menu à l'écran",
+                  "Lancer la boucle principale du programme"
+                ],
+                "correct_answer": "Définir les options du menu"
+              },
+              {
+                "question": "Quelle est la bonne façon de gérer les entrées utilisateur dans un menu ?",
+                "options": [
+                  "Utiliser des conditions if-else pour chaque option",
+                  "Utiliser des boucles pour gérer les entrées utilisateur",
+                  "Utiliser des fonctions pour gérer les entrées utilisateur",
+                  "Utiliser des variables pour stocker les entrées utilisateur"
+                ],
+                "correct_answer": "Utiliser des conditions if-else pour chaque option"
+              },
+              {
+                "question": "Comment afficher le menu à l'écran ?",
+                "options": [
+                  "Utiliser la fonction print() pour afficher le menu",
+                  "Utiliser la fonction input() pour afficher le menu",
+                  "Utiliser la fonction cout() pour afficher le menu",
+                  "Utiliser la fonction printf() pour afficher le menu"
+                ],
+                "correct_answer": "Utiliser la fonction print() pour afficher le menu"
+              },
+              {
+                "question": "Quelle est la bonne façon de gérer les erreurs dans un menu ?",
+                "options": [
+                  "Utiliser des exceptions pour gérer les erreurs",
+                  "Utiliser des conditions if-else pour gérer les erreurs",
+                  "Utiliser des boucles pour gérer les erreurs",
+                  "Utiliser des variables pour stocker les erreurs"
+                ],
+                "correct_answer": "Utiliser des exceptions pour gérer les erreurs"
+              },
+              {
+                "question": "Comment lancer la boucle principale du programme après avoir affiché le menu ?",
+                "options": [
+                  "Utiliser la fonction while() pour lancer la boucle principale",
+                  "Utiliser la fonction for() pour lancer la boucle principale",
+                  "Utiliser la fonction loop() pour lancer la boucle principale",
+                  "Utiliser la fonction main() pour lancer la boucle principale"
+                ],
+                "correct_answer": "Utiliser la fonction while() pour lancer la boucle principale"
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "question": "Quel est le but principal d'une séance d'étirement après une séance de musculation ?",
+            "options": [
+              "Augmenter la force musculaire",
+              "Améliorer la flexibilité et la mobilité",
+              "Réduire la douleur et l'inflammation",
+              "Augmenter la vitesse de course"
+            ],
+            "correct_answer": "B"
+          },
+          {
+            "question": "Quel est l'avantage principal de la pratique du yoga ?",
+            "options": [
+              "Améliorer la force musculaire",
+              "Augmenter la vitesse de course",
+              "Améliorer la flexibilité et la mobilité",
+              "Réduire le stress et l'anxiété"
+            ],
+            "correct_answer": "D"
+          },
+          {
+            "question": "Quel est le type d'exercice qui consiste à travailler les muscles avec des poids ou des appareils de force ?",
+            "options": [
+              "Exercice d'endurance",
+              "Exercice de force",
+              "Exercice d'agilité",
+              "Exercice de flexibilité"
+            ],
+            "correct_answer": "B"
+          },
+          {
+            "question": "Quel est l'avantage principal de la pratique de la marche rapide ?",
+            "options": [
+              "Augmenter la force musculaire",
+              "Améliorer la flexibilité et la mobilité",
+              "Réduire le risque de maladies cardiaques",
+              "Augmenter la vitesse de course"
+            ],
+            "correct_answer": "C"
+          },
+          {
+            "question": "Quel est le type d'exercice qui consiste à travailler les muscles sans utiliser de poids ou d'appareils de force ?",
+            "options": [
+              "Exercice d'endurance",
+              "Exercice de force",
+              "Exercice d'agilité",
+              "Exercice de flexibilité"
+            ],
+            "correct_answer": "D"
+          }
+        ]
+      },
+      {
+        "title": "HQL (Hibernate Query Language)",
+        "mini_modules": [
+          {
+            "title": "CreateQuery",
+            "concepts": [
+              {
+                "title": "Permet d'exécuter des requêtes HQL, comme du SQL",
+                "questions": [
+                  {
+                    "question": "Quel est l'outil permettant d'exécuter des requêtes HQL, comme du SQL, dans Hibernate?",
+                    "options": [
+                      "Hibernate Query Language (HQL)",
+                      "Java Persistence API (JPA)",
+                      "Query Language for Hibernate (QLH)",
+                      "Hibernate Template (HT)"
+                    ],
+                    "correct_answer": "Hibernate Query Language (HQL)"
+                  },
+                  {
+                    "question": "Quel est l'avantage principal de l'utilisation de HQL par rapport à du SQL classique?",
+                    "options": [
+                      "Amélioration de la sécurité",
+                      "Gain de performance",
+                      "Simplification de la syntaxe",
+                      "Indépendance de la base de données"
+                    ],
+                    "correct_answer": "Indépendance de la base de données"
+                  },
+                  {
+                    "question": "Comment s'appelle la méthode permettant d'exécuter une requête HQL dans Hibernate?",
+                    "options": [
+                      "executeQuery()",
+                      "createQuery()",
+                      "executeUpdate()",
+                      "executeNativeQuery()"
+                    ],
+                    "correct_answer": "createQuery()"
+                  },
+                  {
+                    "question": "Quel est l'exemple de requête HQL pour récupérer tous les utilisateurs dont l'âge est supérieur à 18 ans?",
+                    "options": [
+                      "SELECT * FROM User WHERE age > 18",
+                      "FROM User WHERE age > 18",
+                      "SELECT u FROM User u WHERE u.age > 18",
+                      "FROM User u WHERE u.age > 18"
+                    ],
+                    "correct_answer": "SELECT u FROM User u WHERE u.age > 18"
+                  },
+                  {
+                    "question": "Quel est l'objectif principal de l'utilisation de HQL dans les applications Java?",
+                    "options": [
+                      "Améliorer la sécurité des données",
+                      "Optimiser les performances de l'application",
+                      "Simplifier la gestion des données",
+                      "Permettre l'indépendance de la base de données"
+                    ],
+                    "correct_answer": "Permettre l'indépendance de la base de données"
+                  }
+                ]
+              }
+            ],
+            "questions": [
+              {
+                "question": "What is the primary function of a database in a computer system?",
+                "options": [
+                  "To store and manage user data",
+                  "To provide a user interface for applications",
+                  "To perform mathematical calculations and simulations",
+                  "To manage network connections and communication"
+                ],
+                "correct_answer": "To store and manage user data"
+              },
+              {
+                "question": "What is the term for a set of rules that govern how data is stored and manipulated in a database?",
+                "options": [
+                  "Database schema",
+                  "Database model",
+                  "Database language",
+                  "Database query"
+                ],
+                "correct_answer": "Database schema"
+              },
+              {
+                "question": "What is the process of creating a copy of a database for backup or testing purposes?",
+                "options": [
+                  "Database replication",
+                  "Database migration",
+                  "Database cloning",
+                  "Database backup"
+                ],
+                "correct_answer": "Database cloning"
+              },
+              {
+                "question": "What is the term for a query that retrieves data from a database based on specific conditions?",
+                "options": [
+                  "Database query",
+                  "Database command",
+                  "Database request",
+                  "Database instruction"
+                ],
+                "correct_answer": "Database query"
+              },
+              {
+                "question": "What is the term for a database that is stored on a single computer and is not accessible over a network?",
+                "options": [
+                  "Client-server database",
+                  "Cloud database",
+                  "Local database",
+                  "Network database"
+                ],
+                "correct_answer": "Local database"
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "question": "What is the purpose of the 'FROM' clause in HQL?",
+            "options": [
+              "To specify the query result's data type",
+              "To specify the table or entity to query",
+              "To specify the query's sorting order",
+              "To specify the query's filtering criteria"
+            ],
+            "correct_answer": "B"
+          },
+          {
+            "question": "What is the difference between 'SELECT' and 'SELECT DISTINCT' in HQL?",
+            "options": [
+              "SELECT returns all rows, while SELECT DISTINCT returns unique rows",
+              "SELECT returns unique rows, while SELECT DISTINCT returns all rows",
+              "SELECT returns rows with duplicates, while SELECT DISTINCT returns unique rows",
+              "SELECT returns unique rows, while SELECT DISTINCT returns rows with duplicates"
+            ],
+            "correct_answer": "A"
+          },
+          {
+            "question": "How do you specify a join in HQL?",
+            "options": [
+              "Using the 'JOIN' keyword",
+              "Using the 'INNER JOIN' keyword",
+              "Using the 'LEFT JOIN' keyword",
+              "Using the 'WHERE' clause with a subquery"
+            ],
+            "correct_answer": "B"
+          },
+          {
+            "question": "What is the purpose of the 'ORDER BY' clause in HQL?",
+            "options": [
+              "To specify the query result's data type",
+              "To specify the query's sorting order",
+              "To specify the query's filtering criteria",
+              "To specify the query's grouping criteria"
+            ],
+            "correct_answer": "B"
+          },
+          {
+            "question": "How do you specify a subquery in HQL?",
+            "options": [
+              "Using the 'SELECT' keyword with a subquery",
+              "Using the 'FROM' keyword with a subquery",
+              "Using the 'WHERE' clause with a subquery",
+              "Using the 'JOIN' keyword with a subquery"
+            ],
+            "correct_answer": "C"
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "question": "Quel est le but principal de la programmation orientée objet (POO) en Java ?",
+        "options": [
+          "Créer des applications web",
+          "Développer des applications graphiques",
+          "Modéliser des objets réels et leurs interactions",
+          "Exécuter des tâches en arrière-plan"
+        ],
+        "correct_answer": "Modéliser des objets réels et leurs interactions"
+      },
+      {
+        "question": "Quel est le rôle de Hibernate dans le développement d'applications Java ?",
+        "options": [
+          "Fournir un framework de développement d'applications graphiques",
+          "Gérer les connexions à la base de données",
+          "Mappée les objets Java vers les tables de la base de données",
+          "Créer des applications web"
+        ],
+        "correct_answer": "Mappée les objets Java vers les tables de la base de données"
+      },
+      {
+        "question": "Quel est le principal avantage de l'utilisation de JavaFX dans le développement d'applications Java ?",
+        "options": [
+          "Améliorer la sécurité des applications",
+          "Augmenter la vitesse d'exécution des applications",
+          "Créer des interfaces utilisateur graphiques riches et interactives",
+          "Réduire la complexité du code"
+        ],
+        "correct_answer": "Créer des interfaces utilisateur graphiques riches et interactives"
+      },
+      {
+        "question": "Quel est le but de l'utilisation de l'encapsulation en POO en Java ?",
+        "options": [
+          "Protéger les données des objets",
+          "Améliorer la lisibilité du code",
+          "Augmenter la complexité du code",
+          "Réduire la sécurité des applications"
+        ],
+        "correct_answer": "Protéger les données des objets"
+      },
+      {
+        "question": "Quel est le rôle de la classe `Application` dans JavaFX ?",
+        "options": [
+          "Créer des objets graphiques",
+          "Gérer les événements utilisateur",
+          "Définir la structure de l'application",
+          "Exécuter le code principal de l'application"
+        ],
+        "correct_answer": "Exécuter le code principal de l'application"
+      }
+    ]
+  }
+}

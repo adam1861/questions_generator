@@ -1,0 +1,150 @@
+{
+  "course": {
+    "title": "Développement d'applications Java : POO, Hibernate et JavaFX",
+    "modules": [
+      {
+        "title": "Systèmes de gestion de base de données",
+        "mini_modules": [
+          {
+            "title": "Introduction aux bases de données",
+            "concepts": [
+              {
+                "title": "Définition de la base de données",
+                "mini_concepts": [
+                  {
+                    "title": "Ensemble structuré de données qui modélisent un univers réel"
+                  },
+                  {
+                    "title": "Une base de données est faite pour enregistrer des faits, des opérations au sein d'un organisme"
+                  }
+                ]
+              },
+              {
+                "title": "Système de Gestion de Base de Données (SGBD)",
+                "mini_concepts": [
+                  {
+                    "title": "Système qui permet de gérer des bases de données partagées par plusieurs utilisateurs simultanément"
+                  },
+                  {
+                    "title": "Doit permettre de décrire les données, manipuler les données et contrôler les données"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Modèle relationnel",
+            "concepts": [
+              {
+                "title": "RefNomPrixStockZ12DELL500010Z24SUMSUNG70005Z26SONY60008IdTypeProduitquantitéDate1InZ1210012/09/20252OutZ24220/09/2025IdNomemailtéléphoneproduit1DELLcontact@dell.com0546787623Z122SUMSUNGcontact@sumsung.com0987654578Z243SONYcontact@sony.com0876548932Z26"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Langages de requête",
+        "mini_modules": [
+          {
+            "title": "SQL (Structured Query Language)",
+            "concepts": [
+              {
+                "title": "SQL est devenu le langage standard pour décrire et manipuler les BDR"
+              },
+              {
+                "title": "Les commandes SQL : CREATE, DROP, ALTER, SELECT, INSERT, UPDATE, DELETE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Java et bases de données",
+        "mini_modules": [
+          {
+            "title": "Java DataBase Connectivity (JDBC)",
+            "concepts": [
+              {
+                "title": "Une API Java pour connecter des programmes java à des SGBD"
+              },
+              {
+                "title": "Un ensemble de classes et interfaces java"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Framework de persistance (Hibernate)",
+        "mini_modules": [
+          {
+            "title": "Introduction",
+            "concepts": [
+              {
+                "title": "Hibernate est un Framework Java de persistance qui permet de faire correspondre des tables de base de données relationnelles avec des objets Java"
+              }
+            ]
+          },
+          {
+            "title": "Mise en œuvre du Framework Hibernate",
+            "concepts": [
+              {
+                "title": "Une classe de type JavaBean qui encapsule les données d'une table de base de données"
+              },
+              {
+                "title": "Des propriétés de configuration, notamment des informations concernant la connexion à la base de données"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Première application",
+        "mini_modules": [
+          {
+            "title": "Création de la base de données",
+            "concepts": [
+              {
+                "title": "Créer une base de données « magasin »"
+              }
+            ]
+          },
+          {
+            "title": "Configurer Hibernate",
+            "concepts": [
+              {
+                "title": "Configurer le fichier hibernate.cfg.xml"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercice",
+        "mini_modules": [
+          {
+            "title": "Créer un menu et programmer les instructions liées à chaque entrée du menu",
+            "concepts": [
+              {
+                "title": "Implémenter les CRUD (Create, Read, Update et Delete)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "HQL (Hibernate Query Language)",
+        "mini_modules": [
+          {
+            "title": "CreateQuery",
+            "concepts": [
+              {
+                "title": "Permet d'exécuter des requêtes HQL, comme du SQL"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

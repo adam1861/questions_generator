@@ -1,0 +1,1474 @@
+{
+  "course": "Informatique - EMINES – Université Mohamed 6",
+  "modules": [
+    {
+      "title": "Python  – Les fonctions",
+      "mini_modules": [
+        {
+          "title": "Sommaire",
+          "concepts": [
+            {
+              "title": "Python  – Les fonctions",
+              "mini_concepts": [
+                {
+                  "title": "Fonctions",
+                  "description": "Les fonctions sont très utiles pour réaliser plusieurs fois la même opération au sein d’un programme.",
+                  "questions": [
+                    {
+                      "question": "Quelle est la fonction de la fonction `map()` en programmation ?",
+                      "options": [
+                        "Appliquer une fonction à chaque élément d'un tableau",
+                        "Faire une boucle sur un tableau",
+                        "Récupérer un élément spécifique d'un tableau",
+                        "Supprimer un élément d'un tableau"
+                      ],
+                      "correct_answer": "Appliquer une fonction à chaque élément d'un tableau"
+                    },
+                    {
+                      "question": "Quelle est la fonction de la fonction `filter()` en programmation ?",
+                      "options": [
+                        "Appliquer une fonction à chaque élément d'un tableau",
+                        "Faire une boucle sur un tableau",
+                        "Récupérer les éléments d'un tableau qui répondent à une condition",
+                        "Supprimer un élément d'un tableau"
+                      ],
+                      "correct_answer": "Récupérer les éléments d'un tableau qui répondent à une condition"
+                    },
+                    {
+                      "question": "Quelle est la fonction de la fonction `reduce()` en programmation ?",
+                      "options": [
+                        "Appliquer une fonction à chaque élément d'un tableau",
+                        "Faire une boucle sur un tableau",
+                        "Récupérer les éléments d'un tableau qui répondent à une condition",
+                        "Combinez tous les éléments d'un tableau en un seul élément"
+                      ],
+                      "correct_answer": "Combinez tous les éléments d'un tableau en un seul élément"
+                    },
+                    {
+                      "question": "Quelle est la fonction de la fonction `sort()` en programmation ?",
+                      "options": [
+                        "Appliquer une fonction à chaque élément d'un tableau",
+                        "Faire une boucle sur un tableau",
+                        "Récupérer les éléments d'un tableau qui répondent à une condition",
+                        "Trier les éléments d'un tableau dans l'ordre croissant ou décroissant"
+                      ],
+                      "correct_answer": "Trier les éléments d'un tableau dans l'ordre croissant ou décroissant"
+                    },
+                    {
+                      "question": "Quelle est la fonction de la fonction `forEach()` en programmation ?",
+                      "options": [
+                        "Appliquer une fonction à chaque élément d'un tableau",
+                        "Faire une boucle sur un tableau",
+                        "Récupérer les éléments d'un tableau qui répondent à une condition",
+                        "Supprimer un élément d'un tableau"
+                      ],
+                      "correct_answer": "Faire une boucle sur un tableau"
+                    }
+                  ]
+                },
+                {
+                  "title": "Fonctions mathématiques (module math)",
+                  "description": "Les fonctions mathématiques sont utilisées pour effectuer des opérations mathématiques.",
+                  "questions": [
+                    {
+                      "question": "Quelle est la fonction mathématique qui retourne le sinus d'un angle en radians ?",
+                      "options": [
+                        "math.cos(x)",
+                        "math.sin(x)",
+                        "math.tan(x)",
+                        "math.asin(x)"
+                      ],
+                      "correct_answer": "math.sin(x)"
+                    },
+                    {
+                      "question": "Quelle est la fonction mathématique qui retourne le logarithme népérien d'un nombre ?",
+                      "options": [
+                        "math.log10(x)",
+                        "math.log(x)",
+                        "math.exp(x)",
+                        "math.sqrt(x)"
+                      ],
+                      "correct_answer": "math.log(x)"
+                    },
+                    {
+                      "question": "Quelle est la fonction mathématique qui retourne la racine carrée d'un nombre ?",
+                      "options": [
+                        "math.pow(x, 0.5)",
+                        "math.sqrt(x)",
+                        "math.ceil(x)",
+                        "math.floor(x)"
+                      ],
+                      "correct_answer": "math.sqrt(x)"
+                    },
+                    {
+                      "question": "Quelle est la fonction mathématique qui retourne le nombre pi ?",
+                      "options": [
+                        "math.e",
+                        "math.pi",
+                        "math.tau",
+                        "math.inf"
+                      ],
+                      "correct_answer": "math.pi"
+                    },
+                    {
+                      "question": "Quelle est la fonction mathématique qui retourne le nombre e (base des logarithmes népériens) ?",
+                      "options": [
+                        "math.e",
+                        "math.pi",
+                        "math.tau",
+                        "math.inf"
+                      ],
+                      "correct_answer": "math.e"
+                    }
+                  ]
+                },
+                {
+                  "title": "Fonctions trigonométriques",
+                  "description": "Les fonctions trigonométriques sont utilisées pour effectuer des opérations trigonométriques.",
+                  "questions": [
+                    {
+                      "question": "Quelle est la valeur de sin(π/6) ?",
+                      "options": [
+                        "1/2",
+                        "√3/2",
+                        "1/√3",
+                        "1"
+                      ],
+                      "correct_answer": "1/2"
+                    },
+                    {
+                      "question": "Quelle est la valeur de cos(π/4) ?",
+                      "options": [
+                        "1/√2",
+                        "√2",
+                        "1/2",
+                        "1"
+                      ],
+                      "correct_answer": "1/√2"
+                    },
+                    {
+                      "question": "Quelle est la valeur de tan(π/3) ?",
+                      "options": [
+                        "√3",
+                        "1/√3",
+                        "1",
+                        "√3/2"
+                      ],
+                      "correct_answer": "√3"
+                    },
+                    {
+                      "question": "Quelle est la valeur de sin(π/2) ?",
+                      "options": [
+                        "0",
+                        "1",
+                        "1/2",
+                        "√3/2"
+                      ],
+                      "correct_answer": "1"
+                    },
+                    {
+                      "question": "Quelle est la valeur de cos(0) ?",
+                      "options": [
+                        "0",
+                        "1",
+                        "1/2",
+                        "1/√2"
+                      ],
+                      "correct_answer": "1"
+                    }
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "question": "Quel est le type de variable qui peut être passé à une fonction en tant que paramètre par défaut ?",
+                  "options": [
+                    "int",
+                    "str",
+                    "list",
+                    "None"
+                  ],
+                  "correct_answer": "None"
+                },
+                {
+                  "question": "Quelle est la différence entre les mots-clés `def` et `lambda` pour définir une fonction en Python ?",
+                  "options": [
+                    "Le mot-clé `def` est utilisé pour les fonctions anonymes, tandis que `lambda` est utilisé pour les fonctions nommées.",
+                    "Le mot-clé `def` est utilisé pour les fonctions nommées, tandis que `lambda` est utilisé pour les fonctions anonymes.",
+                    "Le mot-clé `def` est utilisé pour les fonctions qui prennent des paramètres, tandis que `lambda` est utilisé pour les fonctions sans paramètres.",
+                    "Le mot-clé `def` est utilisé pour les fonctions qui retournent une valeur, tandis que `lambda` est utilisé pour les fonctions qui ne retournent pas de valeur."
+                  ],
+                  "correct_answer": "Le mot-clé `def` est utilisé pour les fonctions nommées, tandis que `lambda` est utilisé pour les fonctions anonymes."
+                },
+                {
+                  "question": "Comment appeler une fonction qui est définie à l'intérieur d'une autre fonction en Python ?",
+                  "options": [
+                    "En utilisant le mot-clé `global`",
+                    "En utilisant le mot-clé `nonlocal`",
+                    "En utilisant le mot-clé `return`",
+                    "En utilisant le mot-clé `self`"
+                  ],
+                  "correct_answer": "En utilisant le mot-clé `return`"
+                },
+                {
+                  "question": "Quel est l'avantage de l'utilisation de fonctions décorateurs en Python ?",
+                  "options": [
+                    "Ils permettent de répéter du code",
+                    "Ils permettent de simplifier le code",
+                    "Ils permettent de modifier le comportement d'une fonction sans la modifier",
+                    "Ils permettent de supprimer le code"
+                  ],
+                  "correct_answer": "Ils permettent de modifier le comportement d'une fonction sans la modifier"
+                },
+                {
+                  "question": "Comment passer un argument par référence à une fonction en Python ?",
+                  "options": [
+                    "En utilisant le mot-clé `pass`",
+                    "En utilisant le mot-clé `return`",
+                    "En utilisant le mot-clé `global`",
+                    "En utilisant le mot-clé `nonlocal`"
+                  ],
+                  "correct_answer": "En utilisant le mot-clé `nonlocal`"
+                }
+              ]
+            }
+          ],
+          "questions": [
+            {
+              "question": "Quel est le nom du premier président de la République française ?",
+              "options": [
+                "Louis-Napoléon Bonaparte",
+                "Adolphe Thiers",
+                "Léon Gambetta",
+                "Louis-Napoléon Bonaparte"
+              ],
+              "correct_answer": "Louis-Napoléon Bonaparte"
+            },
+            {
+              "question": "Quel est le nom de la déclaration des droits de l'homme et du citoyen adoptée en 1789 ?",
+              "options": [
+                "Déclaration des droits de l'homme et du citoyen",
+                "Charte constitutionnelle",
+                "Acte additionnel aux constitutions de l'Empire",
+                "Déclaration des droits de l'homme et du citoyen"
+              ],
+              "correct_answer": "Déclaration des droits de l'homme et du citoyen"
+            },
+            {
+              "question": "Quel est le nom du roi qui a abdiqué en 1792 ?",
+              "options": [
+                "Louis XVI",
+                "Louis XVII",
+                "Louis XVIII",
+                "Louis XVI"
+              ],
+              "correct_answer": "Louis XVI"
+            },
+            {
+              "question": "Quel est le nom de la bataille qui a eu lieu en 1792 ?",
+              "options": [
+                "Bataille de Valmy",
+                "Bataille de Jemappes",
+                "Bataille de Fleurus",
+                "Bataille de Valmy"
+              ],
+              "correct_answer": "Bataille de Valmy"
+            },
+            {
+              "question": "Quel est le nom du dirigeant qui a été exécuté en 1793 ?",
+              "options": [
+                "Georges Danton",
+                "Paul Barras",
+                "Louis Antoine de Saint-Just",
+                "Georges Danton"
+              ],
+              "correct_answer": "Georges Danton"
+            }
+          ]
+        },
+        {
+          "title": "1. Fonctions",
+          "mini_modules": [
+            {
+              "title": "1.1 Principe et généralités",
+              "concepts": [
+                {
+                  "title": "En programmation, les fonctions sont très utiles pour réaliser plusieurs fois la même opération au sein d’un programme.",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quel est l'avantage principal des fonctions en programmation ?",
+                      "options": [
+                        "Elles permettent de répéter des instructions complexes",
+                        "Elles permettent de réduire la taille du code",
+                        "Elles permettent de réaliser plusieurs fois la même opération",
+                        "Elles permettent de gérer les erreurs de manière efficace"
+                      ],
+                      "correct_answer": "Elles permettent de réaliser plusieurs fois la même opération"
+                    },
+                    {
+                      "question": "Qu'est-ce que l'on appelle une fonction en programmation ?",
+                      "options": [
+                        "Un bloc d'instructions qui s'exécute automatiquement",
+                        "Un ensemble de variables qui sont partagées entre les fonctions",
+                        "Un ensemble d'instructions qui peuvent être exécutées plusieurs fois",
+                        "Un nom donné à un bloc d'instructions qui peut être réutilisé"
+                      ],
+                      "correct_answer": "Un nom donné à un bloc d'instructions qui peut être réutilisé"
+                    },
+                    {
+                      "question": "Pourquoi les fonctions sont-elles utiles en programmation ?",
+                      "options": [
+                        "Elles permettent de réduire la complexité du code",
+                        "Elles permettent de gagner du temps en réécrivant des instructions",
+                        "Elles permettent de réduire la taille du code et de gagner du temps",
+                        "Elles permettent de gérer les erreurs de manière efficace"
+                      ],
+                      "correct_answer": "Elles permettent de réduire la taille du code et de gagner du temps"
+                    },
+                    {
+                      "question": "Quel est l'exemple le plus simple d'une fonction en programmation ?",
+                      "options": [
+                        "Une fonction qui affiche un message d'erreur",
+                        "Une fonction qui calcule la somme de deux nombres",
+                        "Une fonction qui affiche le nom d'un utilisateur",
+                        "Une fonction qui gère les erreurs de connexion à une base de données"
+                      ],
+                      "correct_answer": "Une fonction qui calcule la somme de deux nombres"
+                    },
+                    {
+                      "question": "Qu'est-ce que l'on appelle la réutilisation d'une fonction en programmation ?",
+                      "options": [
+                        "La réécriture d'une fonction existante",
+                        "La suppression d'une fonction inutile",
+                        "L'appel d'une fonction à plusieurs reprises",
+                        "La modification d'une fonction existante"
+                      ],
+                      "correct_answer": "L'appel d'une fonction à plusieurs reprises"
+                    }
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "question": "Quel est le terme scientifique pour désigner la force qui attire deux objets l'un vers l'autre ?",
+                  "options": [
+                    "Force de gravité",
+                    "Force électromagnétique",
+                    "Force de friction",
+                    "Force de tension"
+                  ],
+                  "correct_answer": "Force de gravité"
+                },
+                {
+                  "question": "Quel est le principe fondamental qui décrit la stabilité d'un système isolé ?",
+                  "options": [
+                    "Principe d'entropie",
+                    "Principe de conservation de l'énergie",
+                    "Principe de conservation de la quantité de mouvement",
+                    "Principe de stabilité thermodynamique"
+                  ],
+                  "correct_answer": "Principe d'entropie"
+                },
+                {
+                  "question": "Quel est le type de mouvement qui se produit lorsque l'objet en mouvement conserve sa vitesse et sa direction ?",
+                  "options": [
+                    "Mouvement uniforme",
+                    "Mouvement uniformément accéléré",
+                    "Mouvement circulaire",
+                    "Mouvement rectiligne"
+                  ],
+                  "correct_answer": "Mouvement uniforme"
+                },
+                {
+                  "question": "Quel est le terme scientifique pour désigner la mesure de la force qui s'exerce sur un objet lorsqu'il est soumis à une force extérieure ?",
+                  "options": [
+                    "Force de friction",
+                    "Force de tension",
+                    "Force de résistance",
+                    "Force de pression"
+                  ],
+                  "correct_answer": "Force de pression"
+                },
+                {
+                  "question": "Quel est le principe qui décrit la relation entre la vitesse et l'énergie d'un objet en mouvement ?",
+                  "options": [
+                    "Principe de conservation de l'énergie",
+                    "Principe de conservation de la quantité de mouvement",
+                    "Principe de conservation de la masse",
+                    "Principe de conservation de la température"
+                  ],
+                  "correct_answer": "Principe de conservation de l'énergie"
+                }
+              ]
+            },
+            {
+              "title": "1.2 Fonctions mathématiques (module math)",
+              "concepts": [
+                {
+                  "title": "faire import math",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quel est le résultat de 7 × 9 ?",
+                      "options": [
+                        "63",
+                        "65",
+                        "67",
+                        "69"
+                      ],
+                      "correct_answer": "63"
+                    },
+                    {
+                      "question": "Quel est le résultat de 24 ÷ 4 ?",
+                      "options": [
+                        "5",
+                        "6",
+                        "8",
+                        "10"
+                      ],
+                      "correct_answer": "6"
+                    },
+                    {
+                      "question": "Quel est le résultat de 11 + 3 ?",
+                      "options": [
+                        "12",
+                        "13",
+                        "14",
+                        "15"
+                      ],
+                      "correct_answer": "14"
+                    },
+                    {
+                      "question": "Quel est le résultat de 9 - 2 ?",
+                      "options": [
+                        "6",
+                        "7",
+                        "8",
+                        "10"
+                      ],
+                      "correct_answer": "7"
+                    },
+                    {
+                      "question": "Quel est le résultat de 6 × 8 ?",
+                      "options": [
+                        "45",
+                        "48",
+                        "50",
+                        "52"
+                      ],
+                      "correct_answer": "48"
+                    }
+                  ]
+                },
+                {
+                  "title": "math.floor(-7.6) : partie entière, donne ici -8.0.",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quel est le résultat de la fonction math.floor appliquée à -7.6 ?",
+                      "options": [
+                        "-7.5",
+                        "-8.0",
+                        "-7.0",
+                        "-9.0"
+                      ],
+                      "correct_answer": "-8.0"
+                    },
+                    {
+                      "question": "La fonction math.floor arrondit un nombre à la partie entière la plus proche. Quel est le résultat de math.floor(-3.8) ?",
+                      "options": [
+                        "-3.7",
+                        "-4.0",
+                        "-3.0",
+                        "-5.0"
+                      ],
+                      "correct_answer": "-4.0"
+                    },
+                    {
+                      "question": "Quel est le résultat de math.floor(2.9) ?",
+                      "options": [
+                        "2.0",
+                        "3.0",
+                        "2.9",
+                        "1.0"
+                      ],
+                      "correct_answer": "2.0"
+                    },
+                    {
+                      "question": "La fonction math.floor arrondit un nombre à la partie entière la plus proche. Quel est le résultat de math.floor(-2.2) ?",
+                      "options": [
+                        "-2.1",
+                        "-2.0",
+                        "-3.0",
+                        "-1.0"
+                      ],
+                      "correct_answer": "-2.0"
+                    },
+                    {
+                      "question": "Quel est le résultat de math.floor(0.5) ?",
+                      "options": [
+                        "0.0",
+                        "1.0",
+                        "0.5",
+                        "-1.0"
+                      ],
+                      "correct_answer": "0.0"
+                    }
+                  ]
+                },
+                {
+                  "title": "int(math.floor(4.5)) : pour avoir l'entier 4.",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quel est le résultat de l'expression math.floor(4.5) ?",
+                      "options": [
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                      ],
+                      "correct_answer": "4"
+                    },
+                    {
+                      "question": "L'expression math.floor(3.7) équivaut à quel entier ?",
+                      "options": [
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                      ],
+                      "correct_answer": "3"
+                    },
+                    {
+                      "question": "Quel est le résultat de l'expression math.floor(2.9) ?",
+                      "options": [
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                      ],
+                      "correct_answer": "2"
+                    },
+                    {
+                      "question": "L'expression math.floor(1.1) équivaut à quel entier ?",
+                      "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                      ],
+                      "correct_answer": "1"
+                    },
+                    {
+                      "question": "Quel est le résultat de l'expression math.floor(0.5) ?",
+                      "options": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                      ],
+                      "correct_answer": "0"
+                    }
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "question": "Quelle est la fonction mathématique qui retourne le sinus d'un angle en radians ?",
+                  "options": [
+                    "math.cos(x)",
+                    "math.sin(x)",
+                    "math.tan(x)",
+                    "math.asin(x)"
+                  ],
+                  "correct_answer": "math.sin(x)"
+                },
+                {
+                  "question": "Quelle est la fonction mathématique qui retourne le logarithme népérien d'un nombre ?",
+                  "options": [
+                    "math.log10(x)",
+                    "math.log(x)",
+                    "math.exp(x)",
+                    "math.sqrt(x)"
+                  ],
+                  "correct_answer": "math.log(x)"
+                },
+                {
+                  "question": "Quelle est la fonction mathématique qui retourne la racine carrée d'un nombre ?",
+                  "options": [
+                    "math.pow(x, 0.5)",
+                    "math.sqrt(x)",
+                    "math.ceil(x)",
+                    "math.floor(x)"
+                  ],
+                  "correct_answer": "math.sqrt(x)"
+                },
+                {
+                  "question": "Quelle est la fonction mathématique qui retourne le nombre pi ?",
+                  "options": [
+                    "math.e",
+                    "math.pi",
+                    "math.tau",
+                    "math.inf"
+                  ],
+                  "correct_answer": "math.pi"
+                },
+                {
+                  "question": "Quelle est la fonction mathématique qui retourne le nombre e (base des logarithmes népériens) ?",
+                  "options": [
+                    "math.e",
+                    "math.pi",
+                    "math.tau",
+                    "math.inf"
+                  ],
+                  "correct_answer": "math.e"
+                }
+              ]
+            }
+          ],
+          "questions": [
+            {
+              "question": "Quelle est la fonction de la fonction `typeof` en JavaScript ?",
+              "options": [
+                "Renvoie le type d'un objet",
+                "Renvoie la valeur d'un objet",
+                "Renvoie la valeur de retour d'une fonction",
+                "Renvoie la valeur de la variable"
+              ],
+              "correct_answer": "Renvoie le type d'un objet"
+            },
+            {
+              "question": "Quelle est la différence entre les fonctions `let` et `const` en JavaScript ?",
+              "options": [
+                "La fonction `let` est utilisée pour déclarer des variables, tandis que la fonction `const` est utilisée pour déclarer des constantes",
+                "La fonction `const` est utilisée pour déclarer des variables, tandis que la fonction `let` est utilisée pour déclarer des constantes",
+                "La fonction `let` est utilisée pour déclarer des constantes, tandis que la fonction `const` est utilisée pour déclarer des variables",
+                "Les deux fonctions sont utilisées pour déclarer des variables"
+              ],
+              "correct_answer": "La fonction `let` est utilisée pour déclarer des variables, tandis que la fonction `const` est utilisée pour déclarer des constantes"
+            },
+            {
+              "question": "Quelle est la fonction de la fonction `map()` en JavaScript ?",
+              "options": [
+                "Renvoie un nouveau tableau avec les résultats d'une fonction appliquée à chaque élément d'un tableau",
+                "Renvoie un tableau avec les indices des éléments d'un tableau",
+                "Renvoie un tableau avec les valeurs des éléments d'un tableau",
+                "Renvoie un tableau vide"
+              ],
+              "correct_answer": "Renvoie un nouveau tableau avec les résultats d'une fonction appliquée à chaque élément d'un tableau"
+            },
+            {
+              "question": "Quelle est la différence entre les fonctions `forEach()` et `map()` en JavaScript ?",
+              "options": [
+                "La fonction `forEach()` applique une fonction à chaque élément d'un tableau, tandis que la fonction `map()` renvoie un nouveau tableau avec les résultats",
+                "La fonction `map()` applique une fonction à chaque élément d'un tableau, tandis que la fonction `forEach()` renvoie un nouveau tableau avec les résultats",
+                "La fonction `forEach()` renvoie un nouveau tableau avec les résultats, tandis que la fonction `map()` applique une fonction à chaque élément d'un tableau",
+                "Les deux fonctions sont identiques"
+              ],
+              "correct_answer": "La fonction `forEach()` applique une fonction à chaque élément d'un tableau, tandis que la fonction `map()` renvoie un nouveau tableau avec les résultats"
+            },
+            {
+              "question": "Quelle est la fonction de la fonction `reduce()` en JavaScript ?",
+              "options": [
+                "Renvoie la somme des éléments d'un tableau",
+                "Renvoie le produit des éléments d'un tableau",
+                "Renvoie un objet avec les clés et les valeurs d'un tableau",
+                "Renvoie un tableau avec les indices des éléments d'un tableau"
+              ],
+              "correct_answer": "Renvoie la somme des éléments d'un tableau"
+            }
+          ]
+        },
+        {
+          "title": "1.3 Définition d’une fonction",
+          "mini_modules": [
+            {
+              "title": "Une fonction est définie par une fonction",
+              "concepts": [
+                {
+                  "title": "Une fonction est définie par une fonction",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quelle est la définition d'une fonction en mathématiques ?",
+                      "options": [
+                        "Une relation entre deux variables",
+                        "Une règle qui prend une entrée et produit une sortie",
+                        "Un ensemble de nombres",
+                        "Une équation qui relie deux variables"
+                      ],
+                      "correct_answer": "Une règle qui prend une entrée et produit une sortie"
+                    },
+                    {
+                      "question": "Quel est l'exemple d'une fonction simple ?",
+                      "options": [
+                        "f(x) = 2x + 1",
+                        "f(x) = x^2 + 3",
+                        "f(x) = 5",
+                        "f(x) = x + 2"
+                      ],
+                      "correct_answer": "f(x) = 5"
+                    },
+                    {
+                      "question": "Quelle est la propriété d'une fonction qui garantit qu'elle est bien définie ?",
+                      "options": [
+                        "La fonction est définie pour tous les nombres réels",
+                        "La fonction est définie pour tous les nombres entiers",
+                        "La fonction est définie pour tous les nombres rationnels",
+                        "La fonction est définie pour tous les nombres réels sauf un"
+                      ],
+                      "correct_answer": "La fonction est définie pour tous les nombres réels"
+                    },
+                    {
+                      "question": "Quel est l'exemple d'une fonction qui n'est pas définie ?",
+                      "options": [
+                        "f(x) = 1 / x",
+                        "f(x) = x^2 + 3",
+                        "f(x) = 5",
+                        "f(x) = x + 2"
+                      ],
+                      "correct_answer": "f(x) = 1 / x"
+                    },
+                    {
+                      "question": "Quelle est la propriété d'une fonction qui garantit qu'elle est injective ?",
+                      "options": [
+                        "La fonction prend deux entrées différentes et produit deux sorties différentes",
+                        "La fonction prend deux entrées différentes et produit la même sortie",
+                        "La fonction prend deux entrées différentes et produit deux sorties différentes sauf une",
+                        "La fonction prend deux entrées différentes et produit la même sortie sauf une"
+                      ],
+                      "correct_answer": "La fonction prend deux entrées différentes et produit deux sorties différentes"
+                    }
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "question": "Quelle est la définition d'une fonction en mathématiques ?",
+                  "options": [
+                    "Une relation entre deux variables",
+                    "Une règle qui prend une entrée et produit une sortie",
+                    "Un ensemble de nombres",
+                    "Une équation qui relie deux variables"
+                  ],
+                  "correct_answer": "Une règle qui prend une entrée et produit une sortie"
+                },
+                {
+                  "question": "Quel est l'exemple d'une fonction simple ?",
+                  "options": [
+                    "f(x) = 2x + 1",
+                    "f(x) = x^2 + 3",
+                    "f(x) = 5",
+                    "f(x) = x + 2"
+                  ],
+                  "correct_answer": "f(x) = 5"
+                },
+                {
+                  "question": "Quelle est la propriété d'une fonction qui garantit qu'elle est bien définie ?",
+                  "options": [
+                    "La fonction est définie pour tous les nombres réels",
+                    "La fonction est définie pour tous les nombres entiers",
+                    "La fonction est définie pour tous les nombres rationnels",
+                    "La fonction est définie pour tous les nombres réels sauf un"
+                  ],
+                  "correct_answer": "La fonction est définie pour tous les nombres réels"
+                },
+                {
+                  "question": "Quel est l'exemple d'une fonction qui n'est pas définie ?",
+                  "options": [
+                    "f(x) = 1 / x",
+                    "f(x) = x^2 + 3",
+                    "f(x) = 5",
+                    "f(x) = x + 2"
+                  ],
+                  "correct_answer": "f(x) = 1 / x"
+                },
+                {
+                  "question": "Quelle est la propriété d'une fonction qui garantit qu'elle est injective ?",
+                  "options": [
+                    "La fonction prend deux entrées différentes et produit deux sorties différentes",
+                    "La fonction prend deux entrées différentes et produit la même sortie",
+                    "La fonction prend deux entrées différentes et produit deux sorties différentes sauf une",
+                    "La fonction prend deux entrées différentes et produit la même sortie sauf une"
+                  ],
+                  "correct_answer": "La fonction prend deux entrées différentes et produit deux sorties différentes"
+                }
+              ]
+            }
+          ],
+          "questions": [
+            {
+              "question": "Quel est le rôle de la fonction `return` dans une fonction en Python ?",
+              "options": [
+                "Permet d'appeler une autre fonction",
+                "Permet de sortir de la fonction et renvoyer une valeur",
+                "Permet d'assigner une valeur à une variable",
+                "Permet d'effectuer une boucle"
+              ],
+              "correct_answer": "Permet de sortir de la fonction et renvoyer une valeur"
+            },
+            {
+              "question": "Comment définir une fonction en Python qui prend un argument ?",
+              "options": [
+                "Utiliser la syntaxe `def fonction() :`",
+                "Utiliser la syntaxe `def fonction(argument) :`",
+                "Utiliser la syntaxe `function(argument) :`",
+                "Utiliser la syntaxe `function() :`"
+              ],
+              "correct_answer": "Utiliser la syntaxe `def fonction(argument) :`"
+            },
+            {
+              "question": "Quel est l'avantage de définir une fonction en Python ?",
+              "options": [
+                "Améliorer la lisibilité du code",
+                "Réduire la taille du code",
+                "Permettre de réutiliser du code",
+                "Tous les avantages ci-dessus"
+              ],
+              "correct_answer": "Tous les avantages ci-dessus"
+            },
+            {
+              "question": "Comment appeler une fonction en Python ?",
+              "options": [
+                "Utiliser la syntaxe `fonction()`",
+                "Utiliser la syntaxe `function()`",
+                "Utiliser la syntaxe `def fonction()`",
+                "Utiliser la syntaxe `function = fonction()`"
+              ],
+              "correct_answer": "Utiliser la syntaxe `fonction()`"
+            },
+            {
+              "question": "Quel est le type de variable qui peut être passé en argument à une fonction en Python ?",
+              "options": [
+                "Seulement des nombres",
+                "Seulement des chaînes de caractères",
+                "Tous les types de variables",
+                "Aucun type de variable"
+              ],
+              "correct_answer": "Tous les types de variables"
+            }
+          ]
+        },
+        {
+          "title": "1.4 Passage d’arguments",
+          "mini_modules": [
+            {
+              "title": "Une particularité des fonctions en Python est que vous n’êtes pas obligé de préciser le type des arguments que vous lui passez",
+              "concepts": [
+                {
+                  "title": "Une particularité des fonctions en Python est que vous n’êtes pas obligé de préciser le type des arguments que vous lui passez",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quelle est la raison pour laquelle vous n'êtes pas obligé de préciser le type des arguments dans les fonctions en Python ?",
+                      "options": [
+                        "Parce que Python est un langage dynamique",
+                        "Parce que les fonctions en Python sont définies à l'exécution",
+                        "Parce que Python est un langage statique",
+                        "Parce que les fonctions en Python ne nécessitent pas de types de données"
+                      ],
+                      "correct_answer": "Parce que Python est un langage dynamique"
+                    },
+                    {
+                      "question": "Quel est l'avantage de ne pas préciser le type des arguments dans les fonctions en Python ?",
+                      "options": [
+                        "Il permet d'écrire du code plus rapide",
+                        "Il permet d'écrire du code plus flexible",
+                        "Il permet d'écrire du code plus sécurisé",
+                        "Il permet d'écrire du code plus efficace"
+                      ],
+                      "correct_answer": "Il permet d'écrire du code plus flexible"
+                    },
+                    {
+                      "question": "Quel est l'inconvénient de ne pas préciser le type des arguments dans les fonctions en Python ?",
+                      "options": [
+                        "Il peut entraîner des erreurs de type de données",
+                        "Il peut entraîner des erreurs de syntaxe",
+                        "Il peut entraîner des erreurs de sécurité",
+                        "Il peut entraîner des erreurs de performance"
+                      ],
+                      "correct_answer": "Il peut entraîner des erreurs de type de données"
+                    },
+                    {
+                      "question": "Quelle est la différence entre les fonctions en Python qui précisent le type des arguments et celles qui ne le font pas ?",
+                      "options": [
+                        "Les fonctions qui précisent le type des arguments sont plus rapides",
+                        "Les fonctions qui ne précisent pas le type des arguments sont plus flexibles",
+                        "Les fonctions qui précisent le type des arguments sont plus sécurisées",
+                        "Les fonctions qui ne précisent pas le type des arguments sont plus efficaces"
+                      ],
+                      "correct_answer": "Les fonctions qui ne précisent pas le type des arguments sont plus flexibles"
+                    },
+                    {
+                      "question": "Pourquoi est-il important de préciser le type des arguments dans les fonctions en Python lorsque cela est nécessaire ?",
+                      "options": [
+                        "Pour éviter les erreurs de type de données",
+                        "Pour améliorer la sécurité du code",
+                        "Pour accélérer l'exécution du code",
+                        "Pour réduire la complexité du code"
+                      ],
+                      "correct_answer": "Pour éviter les erreurs de type de données"
+                    }
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "question": "Quelle est la raison pour laquelle vous n'êtes pas obligé de préciser le type des arguments dans les fonctions en Python ?",
+                  "options": [
+                    "Parce que Python est un langage dynamique",
+                    "Parce que les fonctions en Python sont définies à l'exécution",
+                    "Parce que Python est un langage statique",
+                    "Parce que les fonctions en Python ne nécessitent pas de types de données"
+                  ],
+                  "correct_answer": "Parce que Python est un langage dynamique"
+                },
+                {
+                  "question": "Quel est l'avantage de ne pas préciser le type des arguments dans les fonctions en Python ?",
+                  "options": [
+                    "Il permet d'écrire du code plus rapide",
+                    "Il permet d'écrire du code plus flexible",
+                    "Il permet d'écrire du code plus sécurisé",
+                    "Il permet d'écrire du code plus efficace"
+                  ],
+                  "correct_answer": "Il permet d'écrire du code plus flexible"
+                },
+                {
+                  "question": "Quel est l'inconvénient de ne pas préciser le type des arguments dans les fonctions en Python ?",
+                  "options": [
+                    "Il peut entraîner des erreurs de type de données",
+                    "Il peut entraîner des erreurs de syntaxe",
+                    "Il peut entraîner des erreurs de sécurité",
+                    "Il peut entraîner des erreurs de performance"
+                  ],
+                  "correct_answer": "Il peut entraîner des erreurs de type de données"
+                },
+                {
+                  "question": "Quelle est la différence entre les fonctions en Python qui précisent le type des arguments et celles qui ne le font pas ?",
+                  "options": [
+                    "Les fonctions qui précisent le type des arguments sont plus rapides",
+                    "Les fonctions qui ne précisent pas le type des arguments sont plus flexibles",
+                    "Les fonctions qui précisent le type des arguments sont plus sécurisées",
+                    "Les fonctions qui ne précisent pas le type des arguments sont plus efficaces"
+                  ],
+                  "correct_answer": "Les fonctions qui ne précisent pas le type des arguments sont plus flexibles"
+                },
+                {
+                  "question": "Pourquoi est-il important de préciser le type des arguments dans les fonctions en Python lorsque cela est nécessaire ?",
+                  "options": [
+                    "Pour éviter les erreurs de type de données",
+                    "Pour améliorer la sécurité du code",
+                    "Pour accélérer l'exécution du code",
+                    "Pour réduire la complexité du code"
+                  ],
+                  "correct_answer": "Pour éviter les erreurs de type de données"
+                }
+              ]
+            }
+          ],
+          "questions": [
+            {
+              "question": "Quel est le but d'une introduction dans un discours ou un texte argumentatif ?",
+              "options": [
+                "Présenter les faits",
+                "Définir le but du texte",
+                "Captiver l'audience",
+                "Résumer le contenu"
+              ],
+              "correct_answer": "Définir le but du texte"
+            },
+            {
+              "question": "Quelle est la fonction d'un contre-argument dans un texte argumentatif ?",
+              "options": [
+                "Répondre aux objections",
+                "Présenter les faits",
+                "Définir le but du texte",
+                "Résumer le contenu"
+              ],
+              "correct_answer": "Répondre aux objections"
+            },
+            {
+              "question": "Quel est le but d'un exemple dans un texte argumentatif ?",
+              "options": [
+                "Illustrer un point",
+                "Présenter les faits",
+                "Définir le but du texte",
+                "Résumer le contenu"
+              ],
+              "correct_answer": "Illustrer un point"
+            },
+            {
+              "question": "Quelle est la fonction d'un appel à l'action dans un texte argumentatif ?",
+              "options": [
+                "Résumer le contenu",
+                "Définir le but du texte",
+                "Présenter les faits",
+                "Inviter le lecteur à prendre une décision"
+              ],
+              "correct_answer": "Inviter le lecteur à prendre une décision"
+            },
+            {
+              "question": "Quel est le but d'un résumé dans un texte argumentatif ?",
+              "options": [
+                "Résumer le contenu",
+                "Définir le but du texte",
+                "Présenter les faits",
+                "Illustrer un point"
+              ],
+              "correct_answer": "Résumer le contenu"
+            }
+          ]
+        },
+        {
+          "title": "1.5 Exercices",
+          "mini_modules": [
+            {
+              "title": "Exercice 1 :",
+              "concepts": [
+                {
+                  "title": "Ecrire une fonction itérative qui prend comme paramètre un entier naturel n et calcule le terme un de la suite en utilisant une boucle for.",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quelle est la fonction itérative qui calcule le terme n de la suite en utilisant une boucle for ?",
+                      "options": [
+                        "def terme_n(n): return n * (n + 1) / 2",
+                        "def terme_n(n): for i in range(n): return i",
+                        "def terme_n(n): somme = 0; for i in range(n): somme += i; return somme",
+                        "def terme_n(n): return n ** 2"
+                      ],
+                      "correct_answer": "def terme_n(n): somme = 0; for i in range(n): somme += i; return somme"
+                    },
+                    {
+                      "question": "Quelle est la variable qui stocke la somme des termes de la suite dans la fonction itérative ?",
+                      "options": [
+                        "somme",
+                        "n",
+                        "i",
+                        "resultat"
+                      ],
+                      "correct_answer": "somme"
+                    },
+                    {
+                      "question": "Quelle est la boucle utilisée dans la fonction itérative pour calculer le terme n de la suite ?",
+                      "options": [
+                        "boucle while",
+                        "boucle for",
+                        "boucle while avec une condition",
+                        "boucle for avec une condition"
+                      ],
+                      "correct_answer": "boucle for"
+                    },
+                    {
+                      "question": "Quelle est la fonction itérative qui calcule le terme n de la suite en utilisant une boucle for et qui est correcte ?",
+                      "options": [
+                        "def terme_n(n): for i in range(n): return i",
+                        "def terme_n(n): somme = 0; for i in range(n): somme += i; return somme",
+                        "def terme_n(n): return n * (n + 1) / 2",
+                        "def terme_n(n): return n ** 2"
+                      ],
+                      "correct_answer": "def terme_n(n): somme = 0; for i in range(n): somme += i; return somme"
+                    },
+                    {
+                      "question": "Quelle est la variable qui représente le terme actuel de la suite dans la fonction itérative ?",
+                      "options": [
+                        "somme",
+                        "n",
+                        "i",
+                        "resultat"
+                      ],
+                      "correct_answer": "i"
+                    }
+                  ]
+                },
+                {
+                  "title": "Ecrire une fonction récursive qui prend comme paramètre un entier naturel n et calcule le terme un de la suite.",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quelle est la fonction récursive qui calcule le terme n de la suite 1, 1, 2, 3, 5, 8, ...?",
+                      "options": [
+                        "def fib(n): return n if n <= 1 else fib(n-1) + fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) + 1",
+                        "def fib(n): return n if n <= 1 else fib(n-1) * fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) - fib(n-2)"
+                      ],
+                      "correct_answer": "def fib(n): return n if n <= 1 else fib(n-1) + fib(n-2)"
+                    },
+                    {
+                      "question": "Quelle est la fonction récursive qui calcule le terme n de la suite 0, 1, 1, 2, 3, 5, 8, ...?",
+                      "options": [
+                        "def fib(n): return n if n <= 1 else fib(n-1) + fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) + 1",
+                        "def fib(n): return n if n <= 1 else fib(n-1) * fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) - fib(n-2)"
+                      ],
+                      "correct_answer": "def fib(n): return n if n <= 1 else fib(n-1) + fib(n-2)"
+                    },
+                    {
+                      "question": "Quelle est la fonction récursive qui calcule le terme n de la suite 1, 1, 2, 4, 8, 16, ...?",
+                      "options": [
+                        "def fib(n): return n if n <= 1 else fib(n-1) + fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) + 1",
+                        "def fib(n): return n if n <= 1 else fib(n-1) * fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) + 2 * fib(n-2)"
+                      ],
+                      "correct_answer": "def fib(n): return n if n <= 1 else fib(n-1) + 2 * fib(n-2)"
+                    },
+                    {
+                      "question": "Quelle est la fonction récursive qui calcule le terme n de la suite 1, 2, 4, 8, 16, 32, ...?",
+                      "options": [
+                        "def fib(n): return n if n <= 1 else fib(n-1) + fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) + 1",
+                        "def fib(n): return n if n <= 1 else fib(n-1) * fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) + 2 * fib(n-2)"
+                      ],
+                      "correct_answer": "def fib(n): return n if n <= 1 else fib(n-1) + 2 * fib(n-2)"
+                    },
+                    {
+                      "question": "Quelle est la fonction récursive qui calcule le terme n de la suite 0, 1, 1, 2, 3, 5, 8, 13, ...?",
+                      "options": [
+                        "def fib(n): return n if n <= 1 else fib(n-1) + fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) + 1",
+                        "def fib(n): return n if n <= 1 else fib(n-1) * fib(n-2)",
+                        "def fib(n): return n if n <= 1 else fib(n-1) - fib(n-2)"
+                      ],
+                      "correct_answer": "def fib(n): return n if n <= 1 else fib(n-1) + fib(n-2)"
+                    }
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "question": "Quel est le plus grand fleuve d'Europe?",
+                  "options": [
+                    "Le Danube",
+                    "Le Rhin",
+                    "La Volga",
+                    "Le Nil"
+                  ],
+                  "correct_answer": "Le Danube"
+                },
+                {
+                  "question": "Quel est le plus grand lac d'Europe?",
+                  "options": [
+                    "Le lac Ladoga",
+                    "Le lac Onega",
+                    "Le lac Baïkal",
+                    "Le lac Saimaa"
+                  ],
+                  "correct_answer": "Le lac Ladoga"
+                },
+                {
+                  "question": "Quel est le plus grand pays d'Europe?",
+                  "options": [
+                    "La Russie",
+                    "L'Allemagne",
+                    "La France",
+                    "L'Espagne"
+                  ],
+                  "correct_answer": "La Russie"
+                },
+                {
+                  "question": "Quel est le plus grand fleuve d'Asie?",
+                  "options": [
+                    "Le fleuve Jaune",
+                    "Le fleuve Amour",
+                    "Le fleuve Ob",
+                    "Le fleuve Yangtsé"
+                  ],
+                  "correct_answer": "Le fleuve Amour"
+                },
+                {
+                  "question": "Quel est le plus grand lac d'Asie?",
+                  "options": [
+                    "Le lac Baïkal",
+                    "Le lac Sihon",
+                    "Le lac Balkhash",
+                    "Le lac Issyk-Kul"
+                  ],
+                  "correct_answer": "Le lac Baïkal"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2 :",
+              "concepts": [
+                {
+                  "title": "Soit t un tableau d'entiers de taille n.",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "Quel est le temps de complexité de l'algorithme de tri par insertion ?",
+                      "options": [
+                        "O(n^2)",
+                        "O(n log n)",
+                        "O(n)",
+                        "O(log n)"
+                      ],
+                      "correct_answer": "O(n)"
+                    },
+                    {
+                      "question": "Quel est le temps de complexité de l'algorithme de recherche dichotomique ?",
+                      "options": [
+                        "O(n)",
+                        "O(n log n)",
+                        "O(log n)",
+                        "O(n^2)"
+                      ],
+                      "correct_answer": "O(log n)"
+                    },
+                    {
+                      "question": "Quel est le temps de complexité de l'algorithme de tri par sélection ?",
+                      "options": [
+                        "O(n log n)",
+                        "O(n^2)",
+                        "O(n)",
+                        "O(log n)"
+                      ],
+                      "correct_answer": "O(n^2)"
+                    },
+                    {
+                      "question": "Quel est le temps de complexité de l'algorithme de recherche linéaire ?",
+                      "options": [
+                        "O(n log n)",
+                        "O(n^2)",
+                        "O(n)",
+                        "O(log n)"
+                      ],
+                      "correct_answer": "O(n)"
+                    },
+                    {
+                      "question": "Quel est le temps de complexité de l'algorithme de tri par fusion ?",
+                      "options": [
+                        "O(n log n)",
+                        "O(n^2)",
+                        "O(n)",
+                        "O(log n)"
+                      ],
+                      "correct_answer": "O(n log n)"
+                    }
+                  ]
+                },
+                {
+                  "title": "Ecrire une fonction sansDoublons(t) qui retourne True si le tableau d'entiers t est sans doublons (c'est à dire sans apparition multiple d'un élément), False sinon.",
+                  "mini_concepts": [],
+                  "questions": [
+                    {
+                      "question": "La fonction sansDoublons(t) retourne True si le tableau d'entiers t est sans doublons, False sinon. Quel est le résultat de sansDoublons([1, 2, 3, 4, 5]) ?",
+                      "options": [
+                        "True",
+                        "False",
+                        "Il n'est pas possible de savoir sans exécuter la fonction",
+                        "La fonction ne retourne jamais de résultat"
+                      ],
+                      "correct_answer": "True"
+                    },
+                    {
+                      "question": "La fonction sansDoublons(t) retourne True si le tableau d'entiers t est sans doublons, False sinon. Quel est le résultat de sansDoublons([1, 2, 2, 4, 5]) ?",
+                      "options": [
+                        "True",
+                        "False",
+                        "Il n'est pas possible de savoir sans exécuter la fonction",
+                        "La fonction ne retourne jamais de résultat"
+                      ],
+                      "correct_answer": "False"
+                    },
+                    {
+                      "question": "La fonction sansDoublons(t) retourne True si le tableau d'entiers t est sans doublons, False sinon. Quel est le résultat de sansDoublons([]) ?",
+                      "options": [
+                        "True",
+                        "False",
+                        "Il n'est pas possible de savoir sans exécuter la fonction",
+                        "La fonction ne retourne jamais de résultat"
+                      ],
+                      "correct_answer": "True"
+                    },
+                    {
+                      "question": "La fonction sansDoublons(t) retourne True si le tableau d'entiers t est sans doublons, False sinon. Quel est le résultat de sansDoublons([1, 1, 1, 1, 1]) ?",
+                      "options": [
+                        "True",
+                        "False",
+                        "Il n'est pas possible de savoir sans exécuter la fonction",
+                        "La fonction ne retourne jamais de résultat"
+                      ],
+                      "correct_answer": "False"
+                    },
+                    {
+                      "question": "La fonction sansDoublons(t) retourne True si le tableau d'entiers t est sans doublons, False sinon. Quel est le résultat de sansDoublons([1, 2, 3, 4, 5, 6]) ?",
+                      "options": [
+                        "True",
+                        "False",
+                        "Il n'est pas possible de savoir sans exécuter la fonction",
+                        "La fonction ne retourne jamais de résultat"
+                      ],
+                      "correct_answer": "True"
+                    }
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "question": "Quel est le résultat de l'opération 7 × 3 ?",
+                  "options": [
+                    "14",
+                    "21",
+                    "28",
+                    "35"
+                  ],
+                  "correct_answer": "21"
+                },
+                {
+                  "question": "Quel est le résultat de l'opération 9 - 2 ?",
+                  "options": [
+                    "5",
+                    "7",
+                    "11",
+                    "13"
+                  ],
+                  "correct_answer": "7"
+                },
+                {
+                  "question": "Quel est le résultat de l'opération 4 × 6 ?",
+                  "options": [
+                    "20",
+                    "22",
+                    "24",
+                    "26"
+                  ],
+                  "correct_answer": "24"
+                },
+                {
+                  "question": "Quel est le résultat de l'opération 11 + 1 ?",
+                  "options": [
+                    "10",
+                    "12",
+                    "14",
+                    "16"
+                  ],
+                  "correct_answer": "12"
+                },
+                {
+                  "question": "Quel est le résultat de l'opération 8 - 4 ?",
+                  "options": [
+                    "2",
+                    "4",
+                    "6",
+                    "8"
+                  ],
+                  "correct_answer": "4"
+                }
+              ]
+            }
+          ],
+          "questions": [
+            {
+              "question": "Quel est le nombre de kilogrammes dans 1,5 tonnes ?",
+              "options": [
+                "1500 kg",
+                "1800 kg",
+                "2000 kg",
+                "2500 kg"
+              ],
+              "correct_answer": "1500 kg"
+            },
+            {
+              "question": "1,5 km équivaut à combien de mètres ?",
+              "options": [
+                "1500 m",
+                "15000 m",
+                "150000 m",
+                "1500000 m"
+              ],
+              "correct_answer": "1500 m"
+            },
+            {
+              "question": "Quel est le résultat de 2 + 1,5 ?",
+              "options": [
+                "3,5",
+                "4",
+                "4,5",
+                "5"
+              ],
+              "correct_answer": "3,5"
+            },
+            {
+              "question": "Quel est le nombre de litres dans 1,5 hectolitres ?",
+              "options": [
+                "1500 L",
+                "15000 L",
+                "150000 L",
+                "1500000 L"
+              ],
+              "correct_answer": "1500 L"
+            },
+            {
+              "question": "Quel est le résultat de 3 x 0,5 ?",
+              "options": [
+                "1,5",
+                "1,8",
+                "2",
+                "2,5"
+              ],
+              "correct_answer": "1,5"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Quel est le type de variable qui peut être passé à une fonction en tant que paramètre par défaut ?",
+          "options": [
+            "int",
+            "str",
+            "list",
+            "None"
+          ],
+          "correct_answer": "None"
+        },
+        {
+          "question": "Quelle est la différence entre les mots-clés `def` et `lambda` pour définir une fonction en Python ?",
+          "options": [
+            "Le mot-clé `def` est utilisé pour les fonctions anonymes, tandis que `lambda` est utilisé pour les fonctions nommées.",
+            "Le mot-clé `def` est utilisé pour les fonctions nommées, tandis que `lambda` est utilisé pour les fonctions anonymes.",
+            "Le mot-clé `def` est utilisé pour les fonctions qui prennent des paramètres, tandis que `lambda` est utilisé pour les fonctions sans paramètres.",
+            "Le mot-clé `def` est utilisé pour les fonctions qui retournent une valeur, tandis que `lambda` est utilisé pour les fonctions qui ne retournent pas de valeur."
+          ],
+          "correct_answer": "Le mot-clé `def` est utilisé pour les fonctions nommées, tandis que `lambda` est utilisé pour les fonctions anonymes."
+        },
+        {
+          "question": "Comment appeler une fonction qui est définie à l'intérieur d'une autre fonction en Python ?",
+          "options": [
+            "En utilisant le mot-clé `global`",
+            "En utilisant le mot-clé `nonlocal`",
+            "En utilisant le mot-clé `return`",
+            "En utilisant le mot-clé `self`"
+          ],
+          "correct_answer": "En utilisant le mot-clé `return`"
+        },
+        {
+          "question": "Quel est l'avantage de l'utilisation de fonctions décorateurs en Python ?",
+          "options": [
+            "Ils permettent de répéter du code",
+            "Ils permettent de simplifier le code",
+            "Ils permettent de modifier le comportement d'une fonction sans la modifier",
+            "Ils permettent de supprimer le code"
+          ],
+          "correct_answer": "Ils permettent de modifier le comportement d'une fonction sans la modifier"
+        },
+        {
+          "question": "Comment passer un argument par référence à une fonction en Python ?",
+          "options": [
+            "En utilisant le mot-clé `pass`",
+            "En utilisant le mot-clé `return`",
+            "En utilisant le mot-clé `global`",
+            "En utilisant le mot-clé `nonlocal`"
+          ],
+          "correct_answer": "En utilisant le mot-clé `nonlocal`"
+        }
+      ]
+    }
+  ]
+}

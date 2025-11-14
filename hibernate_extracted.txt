@@ -1,0 +1,191 @@
+--- Page 1 ---
+Développement d’applications Java : POO, Hibernate etJavaFXS4 -ORM et Framework Hibernate
+
+
+--- Page 2 ---
+Objectifs de la séance
+•Comprendre les structures des bases de données•Manipuler les données via le Framework Hibernate via JAVA.
+
+--- Page 3 ---
+Les trois dimensions d’une application
+3InterfaceLangages de programmation / manipulation de donnéesStations de travailTraitementsDonnéesSGBDBases de Données
+
+
+--- Page 4 ---
+Développement en couche
+MySQLOracleSQLServer…JDBCHibernateJPA…Java SwingJAVA FXJSP / ServletStrutsJSF…4
+
+
+--- Page 5 ---
+Développement en couche•Dans cette architecture, nous distinguons :•lesystème de gestion de base de données(SGBD), qui stocke les données utilisées par l'application,•lacouche d'accès aux données, en charge de l'accès aux données et de leur manipulation, indépendamment du SGBD choisi,•lacouche  métier, gère lalogique de l'application,•la coucheservice: correspondant à la mise en œuvre de l'ensemble des règles de gestion et de la logique applicative,•la coucheprésentation, qui s'occupe à la fois d'afficher les données reçues par la couche de services et d'envoyer à la couche de services les informations relatives aux actions de l'utilisateur.
+5
+
+
+--- Page 6 ---
+Introduction aux bases de données
+6
+
+
+--- Page 7 ---
+Bases de données
+7JAVA-012 : Programmation Orienté Objet -Application au langage JAVA«Ensemble structuréde données qui modélisent un univers réel»Une Base de données est faite pour enregistrerdes faits, des opérations au sein d'un organisme (Ecole, administration, banque, université, hôpital, hôtel,..) Les BD ont une place essentielledans l'informatique.
+
+
+--- Page 8 ---
+Système de Gestion de Base de Données (SGBD)
+8«Système qui permet de gérer des bases de données partagées par plusieurs utilisateurs simultanément »Doit permettre de :•Décrire les données : indépendamment des applications (DATA DEFINITION LANGUAGE)•Manipuler les données : interroger et mettre à jour les données (DATA MANIPULATION LANGUAGE)•Contrôler les données : intégrité et confidentialité (DATA CONTROL LANGUAGE)
+Relationnel (SQL):•Données stockées dans destables(lignes/colonnes).•Schéma fixe : chaque ligne suit la même structure.NoSQL Document:•Données stockées sous forme dedocuments JSON-like(clé/valeur imbriquées).•Schéma flexible : chaque document peut avoir des champs différents.
+
+--- Page 9 ---
+Le modèle relationnel
+9
+RefNomPrixStockZ12DELL500010Z24SUMSUNG70005Z26SONY60008IdTypeProduitquantitéDate1InZ1210012/09/20252OutZ24220/09/2025IdNomemailtéléphoneproduit1DELLcontact@dell.com0546787623Z122SUMSUNGcontact@sumsung.com0987654578Z243SONYcontact@sony.com0876548932Z26
+
+--- Page 10 ---
+Les langages de requête
+10SQL (StructuredQueryLanguage) : SQL est devenu le langage standard pour décrire et manipuler les BDR.SQL est l'interface logiciel/logiciel entre les applications et les SGDB
+SQLest un langagedéclaratifinventé par IBM dans les années 1970 (projet System R).
+
+--- Page 11 ---
+Les langages de requête
+11Les commandes SQL :-De définition de la base de données : CREATE database, DROP database-De définition des données pour créer au modifier la structure : CREATE, DROP , ALTER -De manipulation des données  pour insérer, mettre à jour, supprimer et lire :SELECT, INSERT, UPDATE, DELETE-TransactionsBEGIN, COMMIT, ROLLBACK
+
+
+--- Page 12 ---
+JAVA-012 : Programmation Orienté Objet -Application au langage JAVA12Java : connexion à une base de données
+
+
+--- Page 13 ---
+•Java DataBaseConnectivity (JDBC)•Une API Java pour connecter des programmes java à des SGBD. •Un ensemble de classes et interfaces java.•JDBC va permettre : •D'établir une connexion à la BD. •D'envoyer des requêtes SQL. •De récupérer les résultats des requêtes. •Il faut charger un driver pour le SGBD.13
+Interface de connexion aux bases de données via une API Java ainsi manipuler des requêtes en réseau.Définition JDBC
+
+--- Page 14 ---
+Utilisation du JDBC
+14
+JDBC API(standard, côté Java)Connection con = DriverManager.getConnection(url, user, pwd);Statement st = con.createStatement();ResultSet rs = st.executeQuery("SELECT * FROM Produit");
+JDBC Driver(spécifique à chaque SGBD): fournie par l’éditeur du SGBD(MySQL, Oracle, PostgreSQL…)Ex : mysql-connector-j-8.0.33.jarEx: postgresql-42.7.3.jar
+
+--- Page 15 ---
+URL de connexion•Afin de localiser la base de données sur le serveur de base de données, il est indispensable de spécifier une adresse de connexion sous la forme d'une URL. Ces URL commenceront toutes par "jdbc:" . •Chaque SGBD a un son propre format d’URL.•Pour MySQL, l'URL est la suivante : jdbc:mysql://host:port/database. ●Host : correspond à l'adresse IP du serveur. (localhost)●port : port MySQL ou port par défaut. (3306)●Database: le nom de la base de données à laquelle on doit se connecter. (magasin) è(mysql)●login de mot de passe (root, ) è(root, pwd)15
+
+
+--- Page 16 ---
+URL de connexion
+16
+
+
+--- Page 17 ---
+NetBeansservice
+17
+Comment Créer une connexion à une base de données?Serveur et port :Login :Pwd: Base de données :
+
+
+--- Page 18 ---
+DB : Exercice
+18En utilisant l’onglet service de Netbeans•Créer une base de données «Magasin»create databasemagasin;•Créer la table produit (en se référant à votre classe)•Insérer quelques données dans la table (insert)•Sélectionner les données (select)
+
+
+--- Page 19 ---
+Framework de persistance (Hibernate)
+19
+
+
+--- Page 20 ---
+Introduction:DELLRef=23nom=DELLprix=5000Stock = 10:SUMSUNGRef=24nom=SUMSUNGprix=7000Stock = 5:SONYRef=25nom=SONYprix=8000Stock = 20Produit
+Base de données relationnelleHibernateestunFrameworkJavadepersistancequipermetdefairecorrespondredestablesdebasededonnéesrelationnellesavecdesobjetsjava.unprogrammeJavapeutmanipulertouteslesdonnéesenutilisantquedesJavaBean,masquantalorstotalementlabasededonnéessous-jacenteetsesspécificités.LeFrameworkassureleremplissagedecesobjetsetlamiseàjourdelabaseensebasantsurleurcontenu.
+20
+
+
+--- Page 21 ---
+Introduction•HibernateestunFrameworkdemappingObjet/RelationnelpourapplicationsJAVA.•Letermemappingobjet/relationnel(ORM)décritlatechniqueconsistantàfairelelienentrelareprésentationobjetdesdonnéesetsareprésentationrelationnellebaséesurunschémaSQL.•HibernategénèrelecodeSQL:•PasderequêteSQLàécrire,•Pasd’ObjetResultSetàgérer,•Applicationplusportable.S’adapteàlabasededonnéescible.•Hibernates'occupedutransfertdesobjetsJavadanslestablesdelabasededonnées•Enplus,ilpermetderequêterlesdonnéesetproposedesmoyensdelesrécupérer.•IlpeutdoncréduiredemanièresignificativeletempsdedéveloppementquiauraitétéautrementperdudansunemanipulationmanuelledesdonnéesviaSQLetJDBC21
+
+
+--- Page 22 ---
+Mise en œuvre du Framework Hibernate•UneclassedetypeJavaBeanquiencapsulelesdonnéesd'unetabledonnéenommée«classedepersistance»etcontenantdesannotations.•Despropriétésdeconfiguration,notammentdesinformationsconcernantlaconnexionàlabasededonnées(url,loginetpwd)contenantlesmappingsdesclasses.L'architecture d'Hibernate
+22
+
+
+--- Page 23 ---
+Fichiers de configurationLefichierhibernate.propertiesouHibernate.cfg.xmlsertàconfigurerl'accèsàlabasededonnées.Lesinfosindispensablessontlessuivantes:•hibernate.connection.driver_class=LecheminversledriverJDBC,•hibernate.connection.url=Lechemind'accèsàlabase,•hibernate.connection.username=Lenomd'utilisateurdelaconnexion,•hibernate.connection.password=Lemotdepassedelaconnexion,
+23
+
+
+--- Page 24 ---
+Fichiers de configuration
+24<hibernate-configuration><session-factory><propertyname="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property><propertyname="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property><propertyname="hibernate.connection.url">jdbc:mysql://localhost:3306/ecole</property><propertyname="hibernate.connection.username">root</property><propertyname="hibernate.connection.password">root</property><mapping class="classes.metiers.Produit"/></session-factory></hibernate-configuration>
+
+
+--- Page 25 ---
+Les Classes de donnéesUneclassededonnéesestunJavabeanquivaencapsulerlespropriétésdelatabledansseschampsprivatemappésavec@etcontientdesgettersetsetters.
+25
+@Id@Basic(Optional=false)@GeneratedValue(strategy= GenerationType.IDENTITY) («auto-increment»)@Column(name= "NOM_COLONNE" ,nullable= false,unique = true,length= 100,precision= 10,scale= 2,insertable= true,updatable= true,columnDefinition= "DECIMAL(10,2)" ,table = "AUTRE_TABLE")@Entitycette classe Java correspond à une table relationnelle.@Entity(name= "ProduitEntity")Si namenon définit, par défaut c’est le nom de la classe@Table(name= "PRODUITS" ,schema= "GESTION" , //schéma de base de donnéescatalog= "STOCKS" , //databasenameuniqueConstraints= {@UniqueConstraint(name= "UK_PRODUIT_REF" , columnNames= {"REF"})},)
+
+--- Page 26 ---
+Manipuler un produit dans la DB
+26
+SessionFactoryà partir de la config àc’est une usine qui produit des sessions de connexion à la base de donnéesCréation d’un objetConfiguration Hibernate.•new Configuration()→ objet qui représente la config Hibernate.•.configure()→ charge le fichierhibernate.cfg.xmlpar défaut (situé danssrc/main/resources).LaSession Hibernatecorrespond à une connexion avec la base de données.Elle permet d’exécuter des transactions et d’interagir avec les entités (insert, update, delete, requêtes…).Session.persist(p) àinsertSession.save(p) àinsert (return id)Session.update(p)àmettre à jourSession.merge(p) àinsert or updateSession.delete(p) àdeleteSession.remove(p) àdeleteSession.get(class,id)àcharge un objet de type class à partir de la base de données. On peut aussi utiliser laod()•openSession()→ Ouvre une nouvelle session.•close()→ Ferme la session et libère la connexion JDBC.
+
+--- Page 27 ---
+Première Application
+¡Préparerleprojet:§Aupremierlieu,nousavonsbesoindeslibrairiesHibernateetdecopierdesfichiers.jardanslerépertoirelibdevotreprojet,§PourtravailleravecunebasededonnéesMySQL,nousauronsbesoinégalementduconnecteurJDBCdeMySQL27
+
+
+--- Page 28 ---
+Exemple d’applicationCréation de la base de données «magasin»
+On va commencer par créer la table dans la base de données28create databasemagasin;Création de la table «produit»
+Attention, la table doit avoir une clé primaire
+
+
+--- Page 29 ---
+Configurer Hibernate: Hibernate.cfg.xml
+29
+<hibernate-configuration><session-factory><propertyname="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property><propertyname="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property><propertyname="hibernate.connection.url">jdbc:mysql://localhost:3306/magasin</property><propertyname="hibernate.connection.username">root</property><propertyname="hibernate.connection.password">root</property></session-factory></hibernate-configuration>
+
+
+--- Page 30 ---
+Classe Produit
+30Attention :•annotation•Getter & Setter générés
+
+
+--- Page 31 ---
+Application Test•Ilesttempsdechargeretdestockerquelquesobjetsproduits,maisd'abordnousdevonscompléterlaconfigurationavecducoded'infrastructure.•NousdevonsdémarrerHibernate.Cedémarrageinclutlechargementdelaconfigurationetlaconstructiond'unobjetSessionFactoryglobaletlestockerquelquepartfaciled'accèsdanslecodedel'application.•UneSessionFactorypeutouvrirdesnouvellesSessions.•UneSessionreprésenteuneunitédetravaillaSessionFactoryestunobjetglobalinstanciéuneseulefois.31
+
+
+--- Page 32 ---
+Créer la couche service
+32
+
+
+--- Page 33 ---
+Créer des produits dans la méthode main
+33
+
+
+--- Page 34 ---
+Après Exécution
+34
+
+
+--- Page 35 ---
+Les autres opérations
+35
+
+
+--- Page 36 ---
+Exercice
+36
+Dans la méthode main créer un menu et programmer les instructions liées a chaque entrée du menu :Implémenter les CRUD (Create, Read, Update et Delete)1: Créer un produit 2: Afficher un produit à partir de la référence3: Modifier le stock d’un produit4: Supprimer un produit8: Quitter (System.exit())
+
+--- Page 37 ---
+HQL : Hibernate QueryLanguage
+37
+CreateQuery: permet d’exécuter des requêtesHQL, comme du SQL, elle utilise les noms des classes et des attributs.List<Produit> produits = session.createQuery("FROM Produit p WHERE p.prix> 100").list();session.createQuery("FROM Produit p ORDER BY p.prixASC").list();session.createQuery("SELECT p.nom, SUM(p.stock) FROM Produit p GROUP BY p.nom").list();session.createQuery("FROM Produit p WHERE p.nom= :nom").setParameter("nom" , "DELL").list();session.createQuery("FROM Produit p WHERE p.stock< :stock").setParameter("stock", 10).list();•createQuery("FROM Produit")utilise lenom de la classe, pas la table SQL. Et renvoie une liste des objets de type Produit•Paramètres →:nom,:prix: on utilise setParameterpour donner les valeurs•ORDER BY,GROUP BY,HAVING→ fonctionnent comme en SQL.•LeSELECTne renvoie pas des entités, on obtient des tableaux d’objets (Object[]).
+
+--- Page 38 ---
+Exercice
+38
+Dans votre méthode main ajouter  un menu 6 pour lister les produits et un menu et programmer les instructions liées a chaque entrée du menu :1: Créer un produit 2: Afficher un produit à partir de la référence3: Modifier le stock un produit4: Supprimer un produit5: Lister les produits par ordre de prix6: Lister les produits ayant un stock inférieur à un stock saisi en paramètre7: Lister le nom et le prix des produits ayant un stock supérieur à un stock maximum8: Quitter (System.exit())
+
+--- Page 39 ---
+Post Lab & Pré Lab
+Postlab(POO en Java)qComment Hibernate gère les clés étrangères.qEX : cas de la table mouvementDeStockqQue veut dire les annotations suivantes : Prélab(Gestion des interfaces Graphiques JAVA avec Java FX)qXML : définition, structure.qC’est quoi une interface GraphiqueqC’est les différents API permettant de créer des interfaces graphiques en JAVAqQuelle est la structure d’un projet JAVAFXqQue contient un fichier FXMLqComment lier un fichier FXML avec du code JAVAa)@OneToManyb)@ManyToOnec)@JoinColumn
